@@ -1,0 +1,354 @@
+/*Стили оставляю не сжатыми, чтобы вы могли свободно
+разглядывать мою работу.*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,head{margin:0;padding:0;outline:0;border:0;}
+@font-face{
+  font-family:'PN-bold';
+  src:url(../file/fonts/pn-bold.otf);
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@font-face{
+  font-family:'PN-reg';
+  src:url(../file/fonts/pn-reg.otf);
+}
+@font-face{
+  font-family:'PN-lite';
+  src:url(../file/fonts/pn-lite.otf);
+}
+body{
+	width: 100%;
+	color: #595959;
+	font-family: 'PN-reg',sans-serif;
+	-webkit-font-smoothing: antialiased !important;
+}
+a{
+	text-decoration: none;
+}
+h1,h2,h3{
+	color: #2ECC71;
+	text-align: center;
+	text-transform: uppercase;
+	font-family:'PN-reg';
+}
+h1{
+	padding-bottom: 58px;
+	font-size: 52px;
+	line-height: 56px;
+}
+h2{
+	font-size: 24px;
+}
+.row{
+	position: relative;
+	float: left;
+	min-width: 282px;
+	width: 100%;
+	height: 100%;
+}
+.clearfix:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+.scrn-1-wrapper,.scrn-2-wrapper,
+.scrn-3-wrapper,.scrn-4-wrapper{
+	z-index: 999;
+	display: table;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.scrn-1-wrapper{
+	position: absolute;
+	top: 0px;
+}
+.scrn-1-block,.scrn-2-block,
+.scrn-3-block,.scrn-4-block{
+	display: block;
+	margin: auto;
+	padding: 150px 0px;
+	min-height: 515px;
+	vertical-align: middle;
+	text-align: center;
+}
+.scrn-1-block{
+	display: table-cell;
+	color: #fff;
+}
+.scrn-1 span{
+	display: inline-block;
+	max-width: 800px;
+	font-size: 56px;
+}
+.scrn-1{
+	display: block;
+}
+.scrn-1-name{
+	display: inline-block;
+	color: #F1C40F;	
+	font-size: 36px;
+	font-family:'PN-lite';
+}
+.scrll-btn{
+	position: absolute;
+	bottom: 50px;
+	display: inline-block;
+	margin-left: -63px;
+	width: 126px;
+	height: 45px;
+	color: #F1C40F;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-family:'PN-reg';
+	cursor: pointer;
+}
+.scrll-btn:after{
+	display: inline-block;
+	width: 0;
+    height: 0;
+    border-top: 15px solid #F1C40F;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+	content: '';
+}
+.video-bg-block{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+}
+.video-bg-filter{
+	position: absolute;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	background: #2ECC71;
+	opacity: 0.1;
+}
+.video-bg{
+	position: absolute;
+	left: 50%;
+	z-index: 9;
+	min-width: 1350px;
+	min-height: 100%;
+	width: 100%;
+}
+.scrn-2-wrapper{
+	background: #F5F5F5;
+	font-size: 18px;
+	line-height: 29px;
+}
+.scrn-2{
+	display: block;
+}
+.scrn-2 article{
+	display: inline-block;
+	float: none;
+	max-width: 690px;
+	width: 100%;
+	text-align: center;
+}
+.scrn-2 span{
+	display: inline-block;
+	margin-top: 10px;
+	font-family: 'Open Sans', sans-serif;
+}
+.scrn-3-wrapper{
+	background: #181E23;
+	font-size: 16px;
+	line-height: 26px;
+}
+.scrn-3{
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+}
+.scrn-3-content{
+	display: inline-block;
+	margin-top: 13px;
+	max-width: 830px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+.ill-title{
+	padding: 36px 0px 20px 0px;
+}
+.scrn-4-wrapper{
+	background: #F5F5F5;
+	font-size: 18px;
+}
+.scrn-4{
+	display: block;
+	text-align: center;
+}
+.scrn-4 section{
+	display: inline-block;
+	text-align: center;
+}
+.scrn-4 section h1{
+	padding-bottom: 43px;
+}
+.scrn-4 section article{
+	float: none;
+	text-align: center;
+}
+.scrn-4-content{
+	display: inline-block;
+	width: 102%;
+	text-align: center;
+}
+.work-block{
+	display: inline-block;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 4px;
+	width: 180px;
+	height: 180px;
+	border: 10px solid #2ECC71;
+	border-radius: 150px;
+}
+.work-link{
+	position: absolute;
+	overflow: visible;
+	margin: auto;
+	padding-top: 62px;
+	width: 180px;
+	height: 118px;
+	border-radius: 150px;
+	background: rgba(0,0,0,.4);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 32px;
+	font-family: "PN-bold";
+	opacity: 0;
+	-webkit-transition:.4s all;
+	-moz-transition:.4s all;
+	transition:.4s all;
+}
+.work-block:hover .work-link{
+	opacity: 1;
+	-webkit-transition:.4s all;
+	-moz-transition:.4s all;
+	transition:.4s all;
+}
+.work-link a{
+	color: #2ECC71;
+}
+.work-link a:before{
+	display: block;
+	margin: auto;
+	width: 40px;
+	height: 27px;
+	background: url(../file/eye-01.svg) left top no-repeat;
+	background-size: 40px;
+	content: '';
+}
+.work-img{
+	width: 100%;
+	height: 100%;
+}
+.footer{
+	margin-top: 69px;
+}
+.scl-btn{  
+	display: inline-block;
+	margin-left: 15px;
+	width: 36px;
+	height: 36px;
+	background: url("../file/sprite.png") left top no-repeat;
+	background-size: 180px;
+	-webkit-transition:.7s all;
+	-moz-transition:.7s all;
+	-moz-transition:.7s all;
+	transition:.7s all;
+}
+.footer-social-btn-block a:first-child .scl-btn {
+	margin-left: 0px;
+}
+.scl-btn:hover{
+	-webkit-transition:.7s all;
+	-moz-transition:.7s all;
+	transition:.7s all;
+  	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+  	-ms-transform: rotate(360deg);
+  	-o-transform: rotate(360deg);
+  	transform: rotate(360deg);
+}
+.vk-scl-btn{
+	background-position: 0px;
+}
+.fb-scl-btn{
+	background-position: -36px 0px;
+}
+.twitter-scl-btn{
+	background-position: -72px 0px;
+}
+.g-scl-btn{
+	background-position: -108px 0px;
+}
+.mail-scl-btn{
+	background-position: -144px 0px;
+}
+.col2{
+	display: inline-block;
+	min-width: 230px;
+	width: 44%!important;
+	text-align: center!important;
+}
+.text-center{
+	text-align: center;
+}
+button{
+	padding: 20px 35px;
+	border: 0px solid #fff;
+	border-radius: 0px;
+	background: rgba(255,255,255,0.8);
+	color: #a3a3a3;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-family:'PN-reg';
+}
+@media (max-width: 981px) {
+	.scrn-4-content{
+		max-width: 640px;
+	}
+}
+@media (max-width: 800px) {
+	.video-bg{
+		display: none;
+	}
+	.video-bg-filter{
+		opacity:1;
+	}
+	.col2{
+		padding: 10px 4% 0px 4%;
+		width: 40%!important;
+		text-align: left!important; 
+	}
+	.scrn-2 article{
+		width: 94%;
+	}
+}
+@media (max-width: 567px) {
+	.col2{
+		margin-top: 80px;
+	}
+}
+@media (max-width: 360px) {
+	body{
+		overflow: overlay;
+	}
+	.scrn-2 span{
+		width: 300px;
+		text-align: justify;
+		font-size: 20px;
+	}
+	.scrn-3{
+		margin-top: 0px;
+	}
+	.col2{
+		display: inline-block;
+		margin-bottom: 40px;
+	}
+}
