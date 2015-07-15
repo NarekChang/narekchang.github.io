@@ -1,3 +1,169 @@
 <html>
-	
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<meta name="viewport" content="width=1180">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+	<link href="css/reset.css" rel="stylesheet" media="screen">
+	<link href="css/all.css?v=19" rel="stylesheet" media="screen">
+	<!--<link href="/css/reset.css" rel="stylesheet" media="screen">
+	<link href="/css/widgets.css" rel="stylesheet" media="screen">
+	<link href="/css/all.css?v=19" rel="stylesheet" media="screen"> -->
+	<!--[if gte IE 9]><link rel="stylesheet" href="/css/ie9.css" media="screen, projection"><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" media="screen, projection"><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" media="screen, projection"><![endif]-->
+	<!--
+    <script src="/js/libs/jquery-2.1.3.min.js"></script>
+    <script src="/js/libs/socket.io-1.3.5.js"></script>
+    <script src="/js/libs/underscore-min.js"></script>
+    <script src="/js/libs/backbone-min.js"></script>
+    <script src="/js/libs/polyglot.js"></script>
+    <script src="/js/libs/i18n.js?v=18"></script>
+
+    <script src="/js/conf.js?v=14"></script>
+    <script src="/js/widgets.js?v=14"></script>
+    <script src="/js/sound.js?v=4"></script>
+
+    <script src="/js/models.js?v=14"></script>
+    <script src="/js/views.js?v=16"></script>
+    <script src="/js/router.js?v=14"></script>
+
+    <script src="/js/app.js?v=17"></script>-->
+</head>
+	<body>
+		<audio id="bet1-sound" src="/audio/Stavka-1.mp3" preload="auto"></audio>
+		<audio id="bet2-sound" src="/audio/Stavka-2.mp3" preload="auto"></audio>
+		<audio id="bet3-sound" src="/audio/Stavka-3.mp3" preload="auto"></audio>
+		<audio id="game-start-sound" src="/audio/game-start.mp3" preload="auto"></audio>
+		<audio id="click-sound-1" src="/audio/click.mp3" preload="auto"></audio>
+		<audio id="click-sound-2" src="/audio/click.mp3" preload="auto"></audio>
+		<audio id="click-sound-3" src="/audio/click.mp3" preload="auto"></audio>
+		<audio id="click-sound-4" src="/audio/click.mp3" preload="auto"></audio>
+		<audio id="click-sound-5" src="/audio/click.mp3" preload="auto"></audio>
+		<audio id="click-sound-6" src="/audio/click.mp3" preload="auto"></audio>
+		<audio id="click-sound-7" src="/audio/click.mp3" preload="auto"></audio>
+		<audio id="click-sound-8" src="/audio/click.mp3" preload="auto"></audio>
+		<audio id="click-sound-9" src="/audio/click.mp3" preload="auto"></audio>
+		<audio id="click-sound-10" src="/audio/click.mp3" preload="auto"></audio>
+		<!-- wrapper -->
+		<div class="wrapper">
+			<!-- header -->
+			<header class="header" role="banner">
+				<div>
+				    <div class="container">
+				        <div class="header-left">
+				            <div class="logo-holder">
+				                <h1 class="logo"><img src="img/logo.png" alt="image"></h1>
+				            </div>
+				        	<nav class="navigation">
+						        <ul class="navigation-list">
+						            <li>
+						                <a href="#">Играть</a>
+						            </li>
+						            <li>
+						            	<a href="#ladder">лидеры</a>
+							        </li>
+						            <li>
+						            	<a href="#history">история</a>
+							        </li>
+						            <li>
+						                <a href="#about">о сайте</a>
+						            </li>
+						        </ul>
+						    </nav>
+				        </div>
+				        <div class="header-right">
+				            <div class="login" data-container="login_form" style="display: block;">
+				                <ul class="login-list">
+				                    <li>
+				                    	<a href="http://server01.csgofast.com/authCom" class="action-login steam_ico btn yellow">ВОЙТИ ЧЕРЕЗ STEAM</a>
+				                    </li>
+				                </ul>
+				            </div>
+				            <div class="top-price" data-container="top_price" style="display: none;">
+				                <p>best jackpot of the game: <b>36718 $</b></p>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+			</header>
+			<div class="content" role="main">
+				<div class="container">
+					<div class="content-box shown">
+						<div class="content-main">
+							<div class="content-main-inner">
+								<div class="content-container">
+								    <!-- promo noauth -->
+								    <div class="promo">
+							        <!-- jackpot -->
+								        <div class="jackpot">
+								            <div class="main-jackpot">
+								                <div class="main-jackpot-title">
+								                    <strong>Попробуйте выиграть <span class="main-jackpot-value"><!--span class="jackpotNum">0</span-->36718 $</span> прямо сейчас! </strong>
+								                </div>
+								            </div>
+								            <div class="buttons right">
+								                <a href="http://server02.csgofast.com/authCom" class="btn-yellow action-login btn yellow">
+								                    ПОПРОБОВАТЬ ВЫИГРАТЬ
+								                </a>
+								            </div>
+								            <div class="left">Участвующие вносят предметы с CS:GO, по достижении определенного максимального количества случайным образом выбирается победитель, который получит все скины. Шанс выигрыша зависит от стоимости внесенных скинов.</div>
+								        </div>
+								        <!-- jackpot end -->
+					    				<!-- infos -->
+					    				<div class="infos">
+								            <div class="infos-columns">
+								                <div class="column-25">
+								                    <div class="column-inner">
+								                        <div class="infos-item">
+								                            <div class="infos-item-value totalGamesPlayed">50</div>
+								                            <div class="infos-item-title">Игр сегодня</div>
+								                        </div>
+								                    </div>
+								                </div>
+								                <div class="column-25">
+								                    <div class="column-inner">
+								                        <div class="infos-item">
+								                            <div class="infos-item-value totalUniquePlayers">373</div>
+								                            <div class="infos-item-title">Игроков сегодня</div>
+								                        </div>
+								                    </div>
+								                </div>
+								                <div class="column-25">
+								                    <div class="column-inner">
+								                        <div class="infos-item">
+								                            <div class="infos-item-value"><span class="totalItems">2885</span></div>
+								                            <div class="infos-item-title">Розыгр. вещей сегодня</div>
+								                        </div>
+								                    </div>
+								                </div>
+								                <div class="column-25">
+								                    <div class="column-inner">
+								                        <div class="infos-item">
+								                            <div class="infos-item-value"><span class="maxPayed">$14,086</span></div>
+								                            <div class="infos-item-title">Макс. выигрыш сегодня</div>
+								                        </div>
+								                    </div>
+								                </div>
+								            </div>
+					   					</div>
+						        <!-- infos end -->
+			    					</div>
+		   						<!-- promo end -->
+								</div>
+								<div class="sidebar-container">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
