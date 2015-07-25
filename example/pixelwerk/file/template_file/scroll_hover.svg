@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="17px" viewBox="0 0 28 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>1/scroll_hover</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs>
+        <path id="path-1" d="M0,0 L12,12 L24,0"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="main_2" sketch:type="MSArtboardGroup" transform="translate(-706.000000, -834.000000)">
+            <g id="1" sketch:type="MSLayerGroup" transform="translate(0.000000, 73.000000)">
+                <g id="Scroll" transform="translate(708.000000, 763.000000)">
+                    <g id="Path-11">
+                        <use stroke="none" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                        <use stroke="#F4CB0A" stroke-width="3.5" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

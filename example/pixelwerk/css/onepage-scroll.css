@@ -1,0 +1,99 @@
+body, html {
+  overflow: hidden;
+  margin: 0;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+body, .onepage-wrapper, html {
+  position: static;
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background: #E2E4E7;
+  text-align: center;
+}
+.onepage-wrapper {
+  position: relative;
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+
+.onepage-wrapper .ops-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-pagination {
+  position: absolute;
+  margin-top: -63.5px;
+  top: 50%;
+  left: 40px;
+  z-index: 9999;
+  padding: 0;
+  list-style: none;
+}
+.onepage-pagination li {
+  padding: 0;
+  text-align: center;
+}
+.onepage-pagination li a{
+  display: block;
+  padding: 10px;
+  width: 9px;
+  height: 9px;
+  
+}
+.onepage-pagination li a:before{
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #D8D8D8;
+  content: '';
+}
+
+.onepage-pagination li a.active:before{
+  margin-left: -2.7px;
+  width: 14px;
+  height: 14px;
+  background: #F4CC10;
+}
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto;
+}
+
+.disabled-onepage-scroll .onepage-wrapper .ops-section {
+  position: relative !important;
+  top: auto !important;
+}
+.disabled-onepage-scroll .onepage-wrapper {
+  min-height: 100%;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important;
+}
+
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none;
+}
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit;
+}

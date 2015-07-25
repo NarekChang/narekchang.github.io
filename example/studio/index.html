@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+		
+	<link  rel="stylesheet" href="css/style.css" >
+
+    <link rel="icon" href="file/favico.ico" type="image/x-icon"> 
+    <link rel="file/favico.ico" type="image/x-icon">
+
+	<title>Веб-студия</title>
+
+</head>
+<body>
+
+	<div class="bg_trgnl" id="bg_trgnl">
+    <script>
+    	var cs = document.createElement('canvas'); 
+		cs.width = screen.width+500; 
+		cs.height = screen.height; 
+		cs.setAttribute("id", "myCanvas");
+		document.getElementById('bg_trgnl').appendChild(cs); 
+    	var canvas = document.getElementById('myCanvas');
+     	var context = canvas.getContext('2d');
+     	var counter = 0,
+    	img = new Image();
+    img.onload = function(){
+        // создаю паттерн
+        var ptrn = context.createPattern(img,'repeat');
+        context.fillStyle = ptrn;
+        // вносим значения
+        var offset_x = 1440-(1/8*10),
+		offset_y = 0+(1/8*10);
+        setInterval(start,20);
+        function start(){
+        	context.clearRect(0, 0, canvas.width, canvas.height); // Очиста всего холста 
+        	if(offset_x<=0){
+        		offset_x+=1/8;      
+         	}
+        	if(offset_x>>325){
+        		offset_x-=1/8;
+        	}
+			offset_y+=1/8;
+        	// координаты
+	        context.translate(offset_x, offset_y);   
+	         // координаты вместе с размерами    
+	        context.fillRect(-offset_x, -offset_y, 1440, 1051);
+	        // антикоординаты
+	        context.translate(-offset_x, -offset_y);
+        }
+    }
+    img.src = 'file/pattern123.png';
+
+    </script>
+	</div>
+	<div class="row">
+		<div class="nav_head__block span4" id="nav_head">
+			<ul class="nav_head">
+				<li><a data-block="#work_block">Våre jobber</a></li>
+				<li><a data-block="#sitecreat_block">Hva GJØR VI?</a></li>
+				<li><a data-block="#about_block">Hvem er vi?</a></li>
+				<li><a data-block="#contact_block">Kontakt oss</a></li>
+
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="welcome_block_wrapper" id="welcome_block">
+			<div  class="welcome_block">
+				<h1 class="title__welcome_block">Hei.</h1>
+				<span>
+					Vi lager minimalistiske, brukervenlige og<br>
+					på samme tid fine websider og apper.
+				</span>
+				<br>
+				<button class="btn_1 btn__welcome_block" id="scrll_contact"><nobr>Send melding</nobr></button>
+				<p class="nav_arrow" id="scrll_down"></p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="work_block_wrapper" id="work_block">
+			<div  class="work_block">
+				<p class="title_page title_page__work">Våre jobber</p>
+				 <div  class="work_block_subject_wrapper">
+				 	<ul class="nav_work_block_subject">
+				 		<li class="active" id="workall"><a href="#workall">Alle jobber</a></li>
+				 		<li id="website"><a href="#website">Websider</a></li>
+					 	<li id="apps"><a href="#apps">Apper</a></li>
+					 	<li id="illustration"><a href="#illustration">Illustrasjoner</a></li>
+				 	</ul>	
+				 	<div class="work_block_subject">
+				 		<div class="work_subject apps">
+				 			<a href="#" class="work_subject__info">
+				 				<img src="file/uploadedimages/SpyCam/Spycam.png" alt="">
+				 			</a>
+				 			<div class="work_subject__about_block">
+				 				<div class="work_subject__about">
+				 					<a href="#"><span class="work_subject__about_title">SpyCam til iPhone</span></a>
+				 					vårt iPhone app
+				 				</div>
+				 			</div>
+				 		</div>
+				 		<div class="work_subject apps">
+				 			<a href="#" class="work_subject__info">
+				 				<img src="file/uploadedimages/SpyCam/Spycam.png" alt="">
+				 			</a>
+				 			<div class="work_subject__about_block">
+				 				<div class="work_subject__about">
+				 					<a href="#"><span class="work_subject__about_title">SpyCam til iPhone</span></a>
+				 					vårt iPhone app
+				 				</div>
+				 			</div>
+				 		</div>
+				 		<div class="work_subject website">
+				 			<a href="#" class="work_subject__info">
+				 				<img src="file/uploadedimages/Imaguru/Imaguru@2x.png" alt="">
+				 			</a>
+				 			<div class="work_subject__about_block">
+				 				<div class="work_subject__about">
+				 					<a href="#"><span class="work_subject__about_title">SpyCam til iPhone</span></a>
+				 					vårt iPhone app
+				 				</div>
+				 			</div>
+				 		</div>
+				 		<div class="work_subject website">
+				 			<a href="#" class="work_subject__info">
+				 				<img src="file/uploadedimages/Imaguru/Imaguru@2x.png" alt="">
+				 			</a>
+				 			<div class="work_subject__about_block">
+				 				<div class="work_subject__about">
+				 					<a href="#"><span class="work_subject__about_title">SpyCam til iPhone</span></a>
+				 					vårt iPhone app
+				 				</div>
+				 			</div>
+				 		</div>
+				 		<div class="work_subject illustration">
+				 			<a href="#" class="work_subject__info">
+				 				<img src="file/uploadedimages/SpyCam/Spycam.png" alt="">
+				 			</a>
+				 			<div class="work_subject__about_block">
+				 				<div class="work_subject__about">
+				 					<a href="#"><span class="work_subject__about_title">SpyCam til iPhone</span></a>
+				 					vårt iPhone app
+				 				</div>
+				 			</div>
+				 		</div>
+				 		<div class="work_subject illustration">
+				 			<a href="#" class="work_subject__info">
+				 				<img src="file/uploadedimages/SpyCam/Spycam.png" alt="">
+				 			</a>
+				 			<div class="work_subject__about_block">
+				 				<div class="work_subject__about">
+				 					<a href="#"><span class="work_subject__about_title">SpyCam til iPhone</span></a>
+				 					vårt iPhone app
+				 				</div>
+				 			</div>
+				 		</div>
+					</div>
+				 	<button class="btn_2 work_block_subject__btn">Vis flere</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row sitecreat_block__before_after" id="sitecreat_block">
+		<div class="sitecreat_block_wrapper">
+			<div  class="sitecreat_block">
+				<h1 class="title__sitecreat_block title_page">Hva gjør vi?</h1>
+				<div class="span4 container icon-block_block">
+					<div class="icon-block">
+						<div class="icon-img_block">
+							<object data="file/3_iMac.svg" type="image/svg+xml" width="141px" height="141px" class="icon-img"></object>
+						</div>
+						<p class="icon-title">Websider</p>
+						Vi lager et fine, brukevenlige <br>
+						og responsive websider. <br>
+						Pluss front-end koding.
+					</div>
+					<div class="icon-block">
+						<div class="icon-img_block">
+							<object data="file/3_iPhone.svg" type="image/svg+xml" width="141px" height="141px" class="icon-img"></object>
+						</div>
+						<p class="icon-title">iOS apper</p>
+						Vi lager apper som ikke er bare<br>
+						brukevenlige, men som også <br>
+						har et unikt utseende.
+					</div>
+					<div class="icon-block">
+						<div class="icon-img_block">
+							<object data="file/3_Illustration.svg" type="image/svg+xml" width="141px" height="141px" class="icon-img"></object>
+						</div>
+						<p class="icon-title">Illustrasjoner</p>
+						Vi tegner moderne illustrasjoner <br>
+						som har en kul stil og fine <br>
+						kombinasjoner av farger.
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+	</div>
+	<div class="row" id="about_block">
+		<div class="about_block_wrapper">
+			<div class="about_block">
+				<h1 class="title_page title_page__about">Hvem er vi?</h1>
+					<div class="text_block">
+						<span>
+							Vi er fire venner som bor i fire forskjellige steder i verden med flere tusen kilometer mellom hverandre: Sibir, Øst-Russland og Norge. 
+						</span>
+						<span>
+							Vi designer og HTML utvikler websider, lager iOS apper og illustrerer. Vi har samarbeidet med hverandre mange ganger  og det var skikkelig gøyt, så vi har bestemt å lage et design byrå slik at det blir lettere for dere å finne oss. 
+						</span>
+						<span>
+							Vi er alltid glade å samarbeide med dere, hvis dere har noen intressante prosjekter som trenger brukevenlig design.
+						</span>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" id="contact_block">
+		<div class="contact_block_wrapper">
+			<div class="contact_block">
+				<h1 class="title_page title_page__contact">Kontakt oss</h1>
+					<div class="form_block">
+						<form action="">
+							<input type="text" placeholder="Navn" class="text_form text_form_line">
+							<input type="text" placeholder="E-post" class="text_form text_form_line">
+							<textarea name="" placeholder="Prosjekt" id="" class="textarea_block"></textarea>
+							<div class="form_btn_block">
+								<button class="btn_3 form_block__btn">Send melding</button>
+							</div>
+						</form>
+					</div>
+					<div class="footer">
+						Eller send oss en e-post: <a class="footer_link" href="mailto:">nonono@no.no</a> 
+						<br>
+						<div class="social_btn">
+							<img src="file/facebook.png" alt="">
+						</div>
+						<div class="social_btn">
+							<img src="file/twitter.png" alt="">
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="post_view__wrapper">
+		<div class="post_view__shadow"></div>
+		<div class="post_view__container">
+			<div class="post_block">
+				<div class="post_title__block">
+					<div class="post_title">SpyCam til iPhone</div>
+					vårt iOS app
+				</div>
+				<div class="text_block">
+					I 2014 finnes det mange tusen apper til iPhone, men det var en app som vi virkelig trenget og som ikke var på App Store. Det vi trenget var noe som kunne hjelpe oss å ta bilder og filme uten at noen merket det. Vi fikk en ide om at det kunne funke å ha en app som så ut som en nettleser, men som tok bilder i stedet for å sørfe. Sånn ble SpyCam født.
+				</div>
+				<div class="text_block">
+					<a href="#" class="f-color-pink">Trykk her for å se alle bildene i full størrelse</a> 
+				</div>
+				<div class="text_block text-justify">
+					<span class="screen_block">
+						<img src="file/uploadedimages/SpyCam/1.png" alt="Loading skjerm" class="screen-img">
+						<br>
+						Loading skjerm
+					</span>
+					<span class="screen_block">
+						<img src="file/uploadedimages/SpyCam/2.png" alt="Introduksjon" class="screen-img">
+						<br>
+						Introduksjon
+					</span>
+				</div>
+				<div class="text_block text-justify">
+					<span class="screen_block">
+						<img src="file/uploadedimages/SpyCam/3.png" alt="Loading skjerm" class="screen-img">
+						<br>
+						Skjerm 1
+					</span>
+					<span class="screen_block">
+						<img src="file/uploadedimages/SpyCam/4.png" alt="Introduksjon" class="screen-img">
+						<br>
+						Skjerm 2
+					</span>
+				</div>
+				<div class="text_block text-justify">
+					<span class="screen_block">
+						<img src="file/uploadedimages/SpyCam/5.png" alt="Loading skjerm" class="screen-img">
+						<br>
+						Gjennomsiktighet
+					</span>
+					<span class="screen_block">
+						<img src="file/uploadedimages/SpyCam/6.png" alt="Introduksjon" class="screen-img">
+						<br>
+						Home page
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</html>

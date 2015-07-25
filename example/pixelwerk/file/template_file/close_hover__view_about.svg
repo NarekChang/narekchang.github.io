@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>apps/close</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs>
+        <path d="M11.780512,11.8734319 L11.780512,0.460673546 L14.6337016,0.460673546 L14.6337016,11.8734319 L26.04646,11.8734319 L26.04646,14.7266215 L14.6337016,14.7266215 L14.6337016,26.1393799 L11.780512,26.1393799 L11.780512,14.7266215 L0.367753579,14.7266215 L0.367753579,11.8734319 L11.780512,11.8734319 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Opened-apps" sketch:type="MSArtboardGroup" transform="translate(-1374.000000, -45.000000)">
+            <g id="Close" sketch:type="MSLayerGroup" transform="translate(1383.798990, 55.084777) rotate(-45.000000) translate(-1383.798990, -55.084777) translate(1370.798990, 42.084777)">
+                <g>
+                    <use fill="none" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <use fill="#F4CC0F" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

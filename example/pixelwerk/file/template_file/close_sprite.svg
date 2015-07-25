@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="57px" height="21px" viewBox="0 0 57 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>apps/close </title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs>
+        <path d="M37.780512,37.8734319 L37.780512,26.4606735 L40.6337016,26.4606735 L40.6337016,37.8734319 L52.04646,37.8734319 L52.04646,40.7266215 L40.6337016,40.7266215 L40.6337016,52.1393799 L37.780512,52.1393799 L37.780512,40.7266215 L26.3677536,40.7266215 L26.3677536,37.8734319 L37.780512,37.8734319 Z" id="path-1"></path>
+        <path d="M12.4876188,12.5805387 L12.4876188,1.16778033 L15.3408084,1.16778033 L15.3408084,12.5805387 L26.7535668,12.5805387 L26.7535668,15.4337283 L15.3408084,15.4337283 L15.3408084,26.8464867 L12.4876188,26.8464867 L12.4876188,15.4337283 L1.07486036,15.4337283 L1.07486036,12.5805387 L12.4876188,12.5805387 Z" id="path-2"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Opened-apps" sketch:type="MSArtboardGroup" transform="translate(-1338.000000, -45.000000)">
+            <g id="Close" sketch:type="MSLayerGroup" transform="translate(1365.414214, 55.084777) rotate(-45.000000) translate(-1365.414214, -55.084777) translate(1339.414214, 29.084777)">
+                <g>
+                    <use fill-opacity="0.3" fill="#000000" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <use fill="none" xlink:href="#path-1"></use>
+                </g>
+                <g>
+                    <use fill="none" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                    <use fill="#F4CC0F" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

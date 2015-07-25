@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="demo-drawings no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+		
+	<link  rel="stylesheet" href="css/style.css" >
+
+    <link rel="icon" href="file/favico.ico" type="image/x-icon"> 
+    <link rel="file/favico.ico" type="image/x-icon">
+
+    <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=KY_UMHhYsks181dFJBz0-qfYFyCQh-5q&id=map_wrapper&width=100%&height=500"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<title>Imaguru</title>
+
+</head>
+<body>
+	<div class="box-coming_wrapper">
+		<div class="box-coming_bg"></div>
+		<div class="box-coming_container text-center">
+			<div class="box-coming margin" id="order">
+				<div class="f-color-grey_dark f-size-25 padding-bottom-14 text-left"><b>Связаться с нами</b></div>
+				<div class="f-color-silver f-size-20 text-left">Заполните Вашу информацию и мы с Вами обязательно свяжемся.</div>
+				<form action="index.php" method="POST" class="form_block">
+					<div class="text-left">
+						<input type="text" class="f-size-20 form_text first-form" autofocus placeholder="Ваши имя и фамилия">
+					</div>
+					<div class="text-left">
+						<input type="text" class="f-size-20 form_text" placeholder="Ваш контактный телефон">
+					</div>
+					<div class="text-left">
+						<input type="text" class="f-size-20 form_text" placeholder="Ваш email">
+					</div>
+					<div class="span4 text-right">
+						<button class="btn">Отправить заявку</button>
+					</div>
+				</form>
+			</div>
+			<div class="box-coming margin" id="feedback">
+				<div class="f-color-grey_dark f-size-25 padding-bottom-14 text-left"><b>Обратный звонок</b></div>
+				<div class="f-color-silver f-size-20 text-left">Введите Ваши имя и фамилию, и номер
+					телефона, и мы Вам позвоним.</div>
+				<form action="index.php" method="POST" class="form_block">
+					<div class="text-left">
+						<input type="text" class="f-size-20 form_text first-form" autofocus placeholder="Ваши имя и фамилия">
+					</div>
+					<div class="text-left">
+						<input type="text" class="f-size-20 form_text" placeholder="Ваш контактный телефон">
+					</div>
+					<div class="span4 text-right">
+						<button class="btn">Отправить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row header_bg span4">
+		<div class="bg_pattern"></div>
+		<div class="space margin header_wrapper bg_pattern_block">
+			<div class="header top-center">
+				<div class="space margin text-center header_animate" style="margin-bottom:-9px;">
+					<object data="file/logo-01.svg" type="image/svg+xml" width="200px" height="168px"></object>
+				</div>
+				<div class="space margin padding-top-30 f-size-big f-color-white text-center header_animate">
+					<hr class="line-for-header line-for-header_top"></hr>
+					Аренда рабочего места,<br>пространства и антикафе
+					<hr class="line-for-header line-for-header_bottom"></hr>
+				</div>
+				<div class="space margin text-center phone_block header_animate" style="margin-top:43px;">
+					<span class="f-size-big f-size-48 f-color-orng phone"><a href="tel:+375291189189" class="f-color-orng">+375 291 189 189</a></span><br>
+					<span class="f-color-white f-size-20 border-bottom border-style-dotted text-btn call-feedback">или закажите обратный звонок</span>
+				</div>
+				<div class="scrollBottom text-center header_animate"></div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="row text-center bg-color-white" id="content">
+		<div class="space table margin padding-t-b-110" style="z-index:9999">
+			<div class="top-center">
+				<h1 class="f-color-grey_dark">Наши преимущества</h1>
+				<div class="text-center benefit_wrapper" id="rotator">
+					<div class="list-block benefit-block main">
+						<div class="benefit-block_object">
+							<object data="file/02/02_price.svg" type="image/svg+xml" width="160px" height="160px"></object><br>
+						</div>	
+						<b class="f-size-20 f-color-grey_dark">Лучшие цены</b>
+					</div>
+					<div class="list-block benefit-block">
+						<div class="benefit-block_object">
+							<object data="file/02/02_coffee.svg" type="image/svg+xml" width="160px" height="160px"></object><br>
+						</div>	
+						<b class="f-size-20 f-color-grey_dark">Бесплатные кофе <br>и печенье</b>
+					</div>
+					<div class="list-block benefit-block">
+						<div class="benefit-block_object">
+							<object data="file/02/02_parking.svg" type="image/svg+xml" width="160px" height="160px"></object><br>
+						</div>	
+						<b class="f-size-20 f-color-grey_dark">Новая парковка</b>
+					</div>
+					<div class="list-block benefit-block">
+						<div class="benefit-block_object">
+							<object data="file/02/02_kicker.svg" type="image/svg+xml" width="160px" height="160px"></object><br>
+						</div>	
+						<b class="f-size-20 f-color-grey_dark"><nobr>Настольный футбол</nobr></b>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="row text-center bg-color-grey">
+		<div class="space table margin padding-t-b-110">
+			<div class="top-center">
+				<h1 class="f-color-grey_dark padding-bottom-70 space text-center">Арендуйте рабочее пространство <br>со всеми удобствами</h1>
+				<div class="padding-t-b-25 text-center box-default_wrapper">
+					<div class="box-default margin-bottom-55 display-inline-block">
+						<div class="box-default_title space f-color-white f-size-32">
+							<b>Новичок</b>
+							<div class="f-color-grey_lite f-size-24" style="margin-top: 2px;">от <b class="f-size-32">$2</b></div>
+							<div class="f-big-char f-size-16 f-color-grey" style="margin-top: -6px;"><b>НА ЧАС/ДЕНЬ/МЕСЯЦ</b></div>
+						</div>
+						<div class="box-default_list padding-top-30 text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_work.svg" type="image/svg+xml" width="30px" height="30px"></object>
+							</div>
+							<div>Рабочее место</div>
+						</div>
+						<div class="box-default_list padding-top-30 text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_wifi.svg" type="image/svg+xml" width="32px" height="32px"></object>
+							</div>
+							<div>Бесплатный Wi-Fi</div>
+						</div>
+						<div class="box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_coffee.svg" type="image/svg+xml" width="30px" height="30px"></object>
+							</div>
+							<div >Кофе, сок и чай</div>
+						</div>
+						<div class="box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_electric.svg" type="image/svg+xml" width="32px" height="32px"></object>
+							</div>
+							<div>Электричество</div>
+						</div>
+						<div class="box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_cleaner.svg" type="image/svg+xml" width="40px" height="31px"></object>
+							</div>
+							<div>Уборка</div>
+						</div>
+						<div class="box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_zones.svg" type="image/svg+xml" width="30px" height="30px"></object>
+							</div>
+							<div>Доступ во все зоны</div>
+						</div>
+						<div class="box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03_gray/03_gray_events.svg" type="image/svg+xml" width="40px" height="31px"></object>
+							</div>
+							<div class="f-color-disable">Бесплатное учасите в меропртиятиях клуба</div>
+						</div>
+						<div class="box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03_gray/03_gray_interview.svg" type="image/svg+xml" width="30px" height="33px"></object>
+							</div>
+							<div class="f-color-disable">Пользование комнатами переговоров</div>
+						</div>
+						<div class="box-default_list padding-bottom-20 text-center">
+							<div class="object_wrapper">
+								<object data="file/03_gray/03_gray_print.svg" type="image/svg+xml" width="30px" height="30px"></object>
+							</div>
+							<div class="f-color-disable">Печать и сканирование документов</div>
+						</div>
+						<div class="display-inline-block box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03_gray/03_gray_help.svg" type="image/svg+xml" width="30px" height="30px"></object>
+							</div>
+							<div class="f-color-disable">Помощь секретаря</div>
+						</div>
+						<button class="btn box-default_btn text-center call-order">Заказать</button>
+						<div class="clearfix"></div>
+					</div>
+					<div class="box-default margin-left-75 margin-bottom-55 display-inline-block">
+						<div class="box-default_title space f-color-white f-size-32">
+							<b>Профессионал</b>
+							<div class="f-color-grey_lite f-size-24" style="margin-top: 2px;">от <b class="f-size-32">$130</b></div>
+							<div class="f-big-char f-size-16 f-color-grey" style="margin-top: -6px;"><b>НА МЕСЯЦ И БОЛЕЕ</b></div>
+						</div>
+						<div class="box-default_list padding-top-30 text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_work.svg" type="image/svg+xml" width="30px" height="30px"></object>
+							</div>
+							<div>Рабочее место</div>
+						</div>
+						<div class="box-default_list padding-top-30 text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_wifi.svg" type="image/svg+xml" width="32px" height="32px"></object>
+							</div>
+							<div>Бесплатный Wi-Fi</div>
+						</div>
+						<div class="box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_coffee.svg" type="image/svg+xml" width="30px" height="30px"></object>
+							</div>
+							<div>Кофе, сок и чай</div>
+						</div>
+						<div class="box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_electric.svg" type="image/svg+xml" width="32px" height="32px"></object>
+							</div>
+							<div>Электричество</div>
+						</div>
+						<div class="box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_cleaner.svg" type="image/svg+xml" width="40px" height="31px"></object>
+							</div>
+							<div>Уборка</div>
+						</div>
+						<div class="box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_zones.svg" type="image/svg+xml" width="30px" height="30px"></object>
+							</div>
+							<div>Доступ во все зоны</div>
+						</div>
+						<div class="box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_events.svg" type="image/svg+xml" width="40px" height="31px"></object>
+							</div>
+							<div>Бесплатное учасите в меропртиятиях клуба</div>
+						</div>
+						<div class="box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_interview.svg" type="image/svg+xml" width="30px" height="33px"></object>
+							</div>
+							<div>Пользование комнатами переговоров</div>
+						</div>
+						<div class="box-default_list padding-bottom-20 text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_printer.svg" type="image/svg+xml" width="30px" height="30px"></object>
+							</div>
+							<div>Печать и сканирование документов</div>
+						</div>
+						<div class="display-inline-block box-default_list text-center">
+							<div class="object_wrapper">
+								<object data="file/03/03_help.svg" type="image/svg+xml" width="30px" height="30px"></object>
+							</div>
+							<div>Помощь секретаря</div>
+						</div>
+						<button class="btn box-default_btn text-center call-order">Заказать</button>
+						<div class="clearfix"></div>
+					</div>
+					<div class="box-default margin-bottom-55 display-inline-block">
+						<div class="space padding-top-30 f-color-blue f-size-32">
+							<b>Аренда переговорной</b>
+							<div class="f-size-24 padding-for-price">
+								<b class="f-size-32 f-color-blue_lite">$10</b>
+							</div>
+							<div class="f-big-char f-size-16 f-color-blue_ullite" style="margin-top:3px;margin-bottom: 19px;"><b>ДО 35 ЧЕЛОВЕК</b></div>
+						</div>
+						<button class="btn box-default_btn text-center f-color-grey_lite call-order">Забронировать</button>
+						<div class="clearfix"></div>
+					</div>
+					<div class="box-default margin-left-75 margin-bottom-55 display-inline-block">
+						<div class="space padding-top-30 f-color-blue f-size-32">
+							<b>Аренда пространства</b>
+							<div class="padding-for-price">
+								<b class="f-size-32 f-color-blue_lite">$50</b>
+							</div>
+							<div class="f-big-char f-size-16 f-color-blue_ullite" style="margin-top:3px;margin-bottom: 19px;"><b>ДО 150 ЧЕЛОВЕК</b></div>
+						</div>
+						<button class="btn box-default_btn text-center call-order">Забронировать</button>
+						<div class="clearfix"></div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="row text-center bg-color-white">
+		<div class="space table margin padding-t-b-110">
+			<div class="top-center">
+				<h1 class="f-color-grey_dark padding-bottom-70 space text-center">Отзывы наших клиентов</h1>
+				<div class="padding-t-b-25 text-center text-block_wrapper ">
+					<div class="display-inline-block text-block padding-bottom-70">
+						<div class="text-left text-block_text">
+							“Привет! Хочу передать привет Евгению Кубышкиному, Александру Романову, Филиппу Волжениному, Денису Прокопову, Илье Гришину, Стасу Тихонько и остальным крутмы чувакам. Желаю счастья, здоровья и хочу поинт летом в Питере. Надеюсь все получится и все будет офигенно! Так же скажу, что The Marshall Mathers LP 2, новый альбом Eminem’a, очень хорош.”
+						</div>
+						<div class="text-right text-block_author">
+							Александр Дворецкий, Tjournal, редактор
+						</div>
+					</div>
+					<div class="display-inline-block text-block padding-bottom-70">
+						<div class="text-left text-block_text">
+							“Привет! Хочу передать привет Евгению Кубышкиному, Александру Романову, Филиппу Волжениному, Денису Прокопову, Илье Гришину, Стасу Тихонько и остальным крутмы чувакам. Желаю счастья, здоровья и хочу поинт летом в Питере. Надеюсь все получится и все будет офигенно! Так же скажу, что The Marshall Mathers LP 2, новый альбом Eminem’a, очень хорош.”
+						</div>
+						<div class="text-right text-block_author">
+							Александр Дворецкий, Tjournal, редактор
+						</div>
+					</div>
+					<button class="btn text-center btn-bg-color-grey margin-top-20">Показать ещё</button>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="row text-center bg-color-grey">
+		<div class="space table margin padding-t-b-110">
+			<div class="top-center">
+				<div class="f-color-grey_dark f-size-36 space text-center">Мы находимся на:</div>
+				<h1 class="f-color-grey_dark space text-center">Фабрициуса 4, Минск</h1>
+			</div>
+		</div>
+		<div class="span4 map_wrapper padding-bottom-50" id="map_wrapper">
+		</div>
+		<div class="space table margin  padding-t-b-110 padding-top-30">
+			<div class="top-center">
+				<div class="text-center phone_block">
+					<span  class="f-size-big f-size-48 f-color-orng phone"><a href="tel:+375291189189" class="f-color-orng">+375 291 189 189</a></span><br>
+					<span class="f-color-grey f-size-18 border-bottom border-color-grey border-style-dotted text-btn call-feedback">или закажите обратный звонок</span>
+				</div>	
+			</div>
+		</div>
+		<div class="span4 scrollUP">
+			<object data="file/01/01_up.svg" type="image/svg+xml" width="43px" height="20px"></object>
+		</div>
+	</div>
+</body>
+</html>
