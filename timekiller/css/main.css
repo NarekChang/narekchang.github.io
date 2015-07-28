@@ -3,8 +3,7 @@ body{
 	font-size: 12px;
 	color: #333;
 	background: #fff;
-	padding-top: 20px;
-    padding-bottom: 20px;
+	padding: 20px;
 }
 a{
     color: #337ab7;
@@ -14,7 +13,7 @@ a:hover{
     text-decoration: underline;
 }
 .container{
-	width: 700px;
+	max-width: 700px;
     padding: 25px 35px;
     margin-bottom: 20px;
     margin-right: auto;
@@ -92,27 +91,36 @@ input:checked + .level[for="hard"]{
 }
 .cell-wrapper{
 	display: inline-block;
-	width: 618px;
+	width: 100%;
 }
-.cell-wrapper.cell-wrapper_33{
-	width: 618px	
+.cell-wrapper.cell-wrapper_33 .cell:nth-child(n+7){
+	border-bottom: 1px solid #F8F8F8;
 }
-.cell-wrapper.cell-wrapper_44{
-	width: 624px	
+.cell-wrapper.cell-wrapper_33 .cell:nth-child(3n){
+	border-right: 1px solid #F8F8F8;
 }
-.cell-wrapper.cell-wrapper_55{
-	width: 630px	
+.cell-wrapper.cell-wrapper_44 .cell:nth-child(n+13){
+	border-bottom: 1px solid #F8F8F8;
+}
+.cell-wrapper.cell-wrapper_44 .cell:nth-child(4n){
+	border-right: 1px solid #F8F8F8;
+}
+.cell-wrapper.cell-wrapper_55 .cell:nth-child(n+21){
+	border-bottom: 1px solid #F8F8F8;
+}
+.cell-wrapper.cell-wrapper_55 .cell:nth-child(5n){
+	border-right: 1px solid #F8F8F8;
 }
 .cell-wrapper .cell{
 	position: relative;
-	margin: 3px;
 	display: inline-block;
-	border: 1px solid #4cae4c;
+	border-top: 3px solid #F8F8F8;
+	border-left: 3px solid #F8F8F8;
 	text-align: center;
+	border-radius: 6px;
 	box-sizing: border-box;
 	float: left;
-	background: #5cb85c;
-	border-radius: 3px;
+	background: #337ab7;
 	cursor: pointer;
 	line-height: 100%;
 }
@@ -126,14 +134,14 @@ input:checked + .level[for="hard"]{
 	zoom: 1.6;
 }
 .cell-wrapper_33 .cell{
-	width: 200px;
-	height: 200px;
+	width: 33%;
+	height: 33%;
 }
 .cell-wrapper_44 .cell{
-	width: 150px;
-	height: 150px;
+	width: 25%;
+	height: 25%;
 }
 .cell-wrapper_55 .cell{
-	width: 120px;
-	height: 120px;
+	width: 20%;
+	height: 20%;
 }
