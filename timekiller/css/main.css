@@ -1,0 +1,139 @@
+body{
+	font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+	font-size: 12px;
+	color: #333;
+	background: #fff;
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+a{
+    color: #337ab7;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.container{
+	width: 700px;
+    padding: 25px 35px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 2px;
+    border: 1px solid #E7E7E7;
+    background: #F8F8F8;
+    box-sizing: border-box;
+}
+.container:after,
+.cell-wrapper:after,
+.score-wrap:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.contact-block{
+	padding: 15px 0;
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+}
+.title{
+	font-size: 22px;
+	font-weight: 600;
+}
+.start-game_txt{
+	font-size: 18px;
+	font-weight: 600;	
+	padding-right: 14px;
+	padding-top: 2px;
+}
+.hidden{
+	display: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.level-set-block{
+	margin-top: 6px;
+}
+.level-set-block .level{
+	padding: 5px 10px;
+	border-radius: 3px;
+	border: 1px solid transparent;
+	font-size: 14px;
+	font-weight: 600;
+}
+input:checked + .level[for="easy"]{
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+input:checked + .level[for="medium"]{
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+}
+input:checked + .level[for="hard"]{
+	color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.game-container{
+	text-align: center;
+	padding: 35px 35px;
+}
+.score-wrap{
+	padding-bottom: 15px;
+	font-size: 15px;
+	font-weight: 600;
+}
+.cell-wrapper{
+	display: inline-block;
+	width: 618px;
+}
+.cell-wrapper.cell-wrapper_33{
+	width: 618px	
+}
+.cell-wrapper.cell-wrapper_44{
+	width: 624px	
+}
+.cell-wrapper.cell-wrapper_55{
+	width: 630px	
+}
+.cell-wrapper .cell{
+	position: relative;
+	margin: 3px;
+	display: inline-block;
+	border: 1px solid #4cae4c;
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+	background: #5cb85c;
+	border-radius: 3px;
+	cursor: pointer;
+	line-height: 100%;
+}
+.cell-wrapper .cell .emoji{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	zoom: 1.6;
+}
+.cell-wrapper_33 .cell{
+	width: 200px;
+	height: 200px;
+}
+.cell-wrapper_44 .cell{
+	width: 150px;
+	height: 150px;
+}
+.cell-wrapper_55 .cell{
+	width: 120px;
+	height: 120px;
+}
