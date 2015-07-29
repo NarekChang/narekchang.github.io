@@ -35,21 +35,30 @@ $(document).ready(function() {
 
 		var score = +$("#score").html()+1;
 		$("#score").html(score);
+		$("#result").html(score);
 
 		$(this).removeClass("hidden").addClass("show");
 
 		if($(".cell.show").length>=2){
 			var val1 = $(".cell.show").eq(0).children(".emoji").data("value");
 			var val2 = $(".cell.show").eq(1).children(".emoji").data("value");
+
 			if(val1 == val2){
-				$(".cell.show").removeClass("hidden show")
+				
+				$(".cell.show").removeClass("hidden show");
+
+				if($(".cell.hidden").length==0){
+					$(".result-block-wrap").removeClass("hide");
+				}
 			}else{
 				$(".cell-wrapper").addClass("no_active");
+
 				function closeCell(){
 					$(".cell.show").removeClass("show").addClass("hidden");
 					$(".cell-wrapper").removeClass("no_active");
 				}
-				setTimeout(closeCell, 800);				
+
+				setTimeout(closeCell, 400);				
 			}
 		}
 	})

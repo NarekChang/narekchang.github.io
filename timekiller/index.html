@@ -3,7 +3,7 @@
 		<title>Time Killer</title>
 		<meta name="format-detection" content="telephone=no">
 		<meta http-equiv="x-rim-auto-match" content="none">
-		<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
 
 		<!-- <link rel="icon" href="file/favico.ico" type="image/x-icon"> 
@@ -16,17 +16,43 @@
 	<body>
 		<div class="container header">
 			<div class="title left">Memory training</div>
-			<div class="right level-set-block">
-				<input id="easy" type="radio" name="level" checked="" hidden>
-				<label for="easy" class="level easy">Easy</label>
-				<input id="medium" type="radio" name="level" hidden>
-				<label for="medium" class="level medium">Medium</label>
-				<input id="hard" type="radio" name="level" hidden>
-				<label for="hard" class="level hard">Hard</label>
-			</div>	
-			<div class="start-game_txt right">Start game: </div>
 		</div>
 		<div class="container game-container">
+			<div class="result-block-wrap hide">
+				<div class="result-block">
+					<div class="title">Game over<span class="emoji emoji1f60e"></span></div>
+				<span class="button start-game">Try again</span>
+				<div class="level-set-block">
+					<input id="easy" type="radio" name="level" checked="" hidden>
+					<label for="easy" class="level easy">Easy</label>
+					<input id="medium" type="radio" name="level" hidden>
+					<label for="medium" class="level medium">Medium</label>
+					<input id="hard" type="radio" name="level" hidden>
+					<label for="hard" class="level hard">Hard</label>
+				</div>	
+				<div>Score: <span id="result"></span></div>
+				<div class="scl-btns-wrapper">
+					Share your result with friends:
+					<div class="scl-btns"></div>
+				</div>
+				</div>
+			</div>
+			<div class="start-block-wrap">
+				<div class="start-block">
+					<div class="title">Set level</div>
+				<div>
+					<div class="level-set-block">
+						<input id="easy" type="radio" name="level" checked="" hidden>
+						<label for="easy" class="level easy">Easy</label>
+						<input id="medium" type="radio" name="level" hidden>
+						<label for="medium" class="level medium">Medium</label>
+						<input id="hard" type="radio" name="level" hidden>
+						<label for="hard" class="level hard">Hard</label>
+					</div>	
+				</div>
+				<span class="button start-game">Start</span>
+				</div>
+			</div>
 			<div class="score-wrap">
 				<span class="right">Score: <span id="score">0</span></span>
 			</div>
