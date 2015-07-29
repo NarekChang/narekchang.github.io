@@ -18,28 +18,46 @@
 			<div class="title left">Memory training</div>
 		</div>
 		<div class="container game-container">
-			<div class="result-block-wrap hide">
-				<div class="result-block">
+			<div class="result-block-wrap blank-block-wrap hide">
+				<div class="result-block blank-block">
 					<div class="title">Game over<span class="emoji emoji1f60e"></span></div>
-				<span class="button start-game">Try again</span>
-				<div class="level-set-block">
-					<input id="easy" type="radio" name="level" checked="" hidden>
-					<label for="easy" class="level easy">Easy</label>
-					<input id="medium" type="radio" name="level" hidden>
-					<label for="medium" class="level medium">Medium</label>
-					<input id="hard" type="radio" name="level" hidden>
-					<label for="hard" class="level hard">Hard</label>
-				</div>	
-				<div>Score: <span id="result"></span></div>
-				<div class="scl-btns-wrapper">
-					Share your result with friends:
-					<div class="scl-btns"></div>
-				</div>
+					<span class="button start-game">Try again</span>
+					<div>Score: <span id="result"></span></div>
+					<div class="scl-btns-wrapper">
+						Share your result with friends:
+						<div class="scl-btns">
+							<div>
+								<!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: 5012976, onlyWidgets: true});
+</script>
+
+<!-- Put this div tag to the place, where the Like block will be -->
+<div id="vk_like"></div>
+<script type="text/javascript">
+VK.Widgets.Like("vk_like", {type: "vertical"});
+</script>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="start-block-wrap">
-				<div class="start-block">
-					<div class="title">Set level</div>
+			<div class="start-block-wrap blank-block-wrap">
+				<div class="start-block blank-block">
+					<div class="title">
+						How to play
+					</div>
+					<div class="how-to-play-block">
+						Click on&nbsp;any block. Try to&nbsp;remember the displayed image. <br>Click on&nbsp;another block. If&nbsp;the images match, the blocks will be&nbsp;removed. The level is&nbsp;passed, when there are no&nbsp;blocks left on&nbsp;the screen.
+					</div>
+					<span class="button start-game">Start</span>
+				</div>
+			</div>
+			<div class="set-level-wrap blank-block-wrap hide">
+				<div class="set-level-block blank-block">
+					<div class="title">Set level: </div>
 				<div>
 					<div class="level-set-block">
 						<input id="easy" type="radio" name="level" checked="" hidden>
@@ -50,7 +68,6 @@
 						<label for="hard" class="level hard">Hard</label>
 					</div>	
 				</div>
-				<span class="button start-game">Start</span>
 				</div>
 			</div>
 			<div class="score-wrap">

@@ -84,10 +84,10 @@ a:hover{
 	margin-top: 6px;
 }
 .level-set-block .level{
-	padding: 5px 10px;
+	padding: 10px 15px;
 	border-radius: 3px;
 	border: 1px solid transparent;
-	font-size: 14px;
+	font-size: 22px;
 	font-weight: 600;
 }
 input:checked + .level.easy{
@@ -191,8 +191,7 @@ input:checked + .level.hard{
 	width: 12%;
 	height: 12%;
 }
-.result-block-wrap,
-.start-block-wrap{
+.blank-block-wrap{
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -205,11 +204,17 @@ input:checked + .level.hard{
 	font-weight: 600;
 	box-sizing: border-box;
 }
+.how-to-play-block{
+	margin: auto;
+	width: 520px;
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
 .hide{
 	display: none;
 }
-.result-block,
-.start-block{
+.blank-block{
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -221,6 +226,14 @@ input:checked + .level.hard{
 .result-block .title{
 	font-size: 36px;
 	position: relative;
+}
+.set-level-block .title{
+	font-size: 32px;
+	margin-bottom: 40px;
+}
+.start-block .title{
+	font-size: 32px;
+	margin-bottom: 20px;
 }
 .result-block .emoji{
 	position: absolute;

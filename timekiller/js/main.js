@@ -11,7 +11,14 @@ $(document).ready(function() {
 	$(window).on('resize', function(){gameContainerRiseze()});
 
 	$(".level").on("click", function(){
-		$(".start-block-wrap").addClass("hide");
+		$(".blank-block-wrap").addClass("hide");
 	});
 
+	$(".start-game").on("click", function(){
+		
+		var that = $(this).parent().parent();
+		
+		that.addClass("hide");
+		$(".set-level-wrap").removeClass("hide");
+	});
 });
