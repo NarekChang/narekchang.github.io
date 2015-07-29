@@ -81,7 +81,11 @@ a:hover{
 	float: right;
 }
 .level-set-block{
-	margin-top: 6px;
+    margin: 6px auto;
+    max-width: 310px;
+}
+.blank-block-wrap.set-level-wrap{
+	background-color: rgba(248, 248, 248, 1);
 }
 .level-set-block .level{
 	padding: 10px 15px;
@@ -89,18 +93,20 @@ a:hover{
 	border: 1px solid transparent;
 	font-size: 22px;
 	font-weight: 600;
+	float: left;
 }
-input:checked + .level.easy{
+.level.easy{
     color: #fff;
     background-color: #f0ad4e;
     border-color: #eea236;
 }
-input:checked + .level.medium{
+.level.medium{
+	margin: 0 10px;
 	color: #fff;
 	background-color: #5cb85c;
 	border-color: #4cae4c;
 }
-input:checked + .level.hard{
+.level.hard{
 	color: #fff;
     background-color: #d9534f;
     border-color: #d43f3a;
@@ -221,8 +227,8 @@ input:checked + .level.hard{
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	padding-top: 20px;
-	height: 320px;
+	padding-top: 40px;
+	height: 300px;
 }
 .result-block .title{
 	font-size: 36px;

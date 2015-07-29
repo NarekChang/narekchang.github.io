@@ -4,18 +4,18 @@ $(document).ready(function() {
 	    return Math.random() * (max - min) + min;
 	}
 
-	var arrayEmojiEasy = ["emoji1f617", "emoji1f617", "emoji1f61f", "emoji1f61f", "emoji1f627", "emoji1f627", "emoji1f62e", "emoji1f62e", "emoji1f634", "emoji1f634", "emoji1f681", "emoji1f681", "emoji1f686", "emoji1f686", "emoji1f68d", "emoji1f68d"];
+	function renderCellWrap(size,i_max,n_max){
 
-	$(".easy").on("click", function(){
+		var arrayEmojiEasy = [	"emoji1f46c", "emoji1f46c",	"emoji1f413", "emoji1f413",	"emoji1f3c8", "emoji1f3c8",	"emoji1f68d", "emoji1f68d",	"emoji1f496", "emoji1f496",	"emoji2615", "emoji2615",	"emoji1f31a", "emoji1f31a",	"emoji1f30d", "emoji1f30d",	"emoji2708", "emoji2708",	"emoji1f354", "emoji1f354",	"emoji1f4f7", "emoji1f4f7",	"emoji1f3b1", "emoji1f3b1",	"emoji1f340", "emoji1f340",	"emoji1f48a", "emoji1f48a",	"emoji1f699", "emoji1f699",	"emoji1f47d", "emoji1f47d",	"emoji1f694", "emoji1f694",	"emoji1f451", "emoji1f451",	"emoji270f", "emoji270f",	"emoji26a1", "emoji26a1",	"emoji1f4b0", "emoji1f4b0",	"emoji1f3c9", "emoji1f3c9",	"emoji1f60d", "emoji1f60d",	"emoji1f425", "emoji1f425", "emoji1f680", "emoji1f680", "emoji1f411", "emoji1f411", "emoji1f60a", "emoji1f60a", "emoji1f437", "emoji1f437", "emoji1f473", "emoji1f473", "emoji1f6a0", "emoji1f6a0","emoji1f36b", "emoji1f36b", "emoji1f3c0", "emoji1f3c0" ];
 		
 		$(".cell-wrapper").remove();
 
-		var $cellWrapper = $('<div class="cell-wrapper cell-wrapper_' + 44 + '"/>');
+		var $cellWrapper = $('<div class="cell-wrapper cell-wrapper_' + size + '"/>');
 		$(".game-container").append( $cellWrapper );
 		
-		for (var i = 1; i < 17; i++) {
+		for (var i = 1; i < i_max; i++) {
 
-			var n = 16 - i;
+			var n = n_max - i;
 			var rand = Math.round(getRandomArbitrary(0, n));
 			var emojiNum = arrayEmojiEasy[rand];
 
@@ -29,7 +29,11 @@ $(document).ready(function() {
 
 		var gameContainerWidth = $(".cell-wrapper").width();
 		$(".cell-wrapper").height( gameContainerWidth );	
-	});
+	}
+
+	$(".easy").on("click", function(){renderCellWrap(44, 17, 16)});
+	$(".medium").on("click", function(){renderCellWrap(66, 37, 36)});
+	$(".hard").on("click", function(){renderCellWrap(88, 65, 64)});
 
 	$(".cell.hidden").live("click", function(){
 
@@ -61,5 +65,6 @@ $(document).ready(function() {
 				setTimeout(closeCell, 400);				
 			}
 		}
+
 	})
 });
