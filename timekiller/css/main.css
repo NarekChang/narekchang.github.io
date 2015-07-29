@@ -168,7 +168,7 @@ input:checked + .level.hard{
 	width: 100%;
 	height: 100%;
 	background: #C0C0C0;
-	z-index: 999;
+	z-index: 9;
 }
 .cell-wrapper .cell .emoji{
 	position: absolute;
@@ -206,7 +206,7 @@ input:checked + .level.hard{
 }
 .how-to-play-block{
 	margin: auto;
-	width: 520px;
+	max-width: 520px;
 	font-weight: 400;
 	font-size: 16px;
 	margin-bottom: 20px;
@@ -221,7 +221,8 @@ input:checked + .level.hard{
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	height: 340px;
+	padding-top: 20px;
+	height: 320px;
 }
 .result-block .title{
 	font-size: 36px;
@@ -250,6 +251,12 @@ input:checked + .level.hard{
 	margin-top: 20px;
 }
 .result-block .scl-btns{
-    width: 240px;
-    margin: auto;
+    width: 328px;
+    margin: 20px auto;
+}
+.result-block .scl-btns span{
+	margin-right: 10px;
+}
+.result-block .scl-btns span:last-child{
+	margin-right: 0;
 }
