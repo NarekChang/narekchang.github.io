@@ -249,3 +249,6 @@ input:checked + .level.hard{
 .result-block .scl-btns-wrapper{
 	margin-top: 20px;
 }
+.result-block .scl-btns{
+	width: 160px;
+}

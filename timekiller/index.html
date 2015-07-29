@@ -12,13 +12,15 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/emoji.css">
 		<link rel="stylesheet" href="css/main.css">
+
+		<script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
 	</head>
 	<body>
 		<div class="container header">
 			<div class="title left">Memory training</div>
 		</div>
 		<div class="container game-container">
-			<div class="result-block-wrap blank-block-wrap hide">
+			<div class="result-block-wrap blank-block-wrap">
 				<div class="result-block blank-block">
 					<div class="title">Game over<span class="emoji emoji1f60e"></span></div>
 					<span class="button start-game">Try again</span>
@@ -26,25 +28,25 @@
 					<div class="scl-btns-wrapper">
 						Share your result with friends:
 						<div class="scl-btns">
-							<div>
+							<a href="http://vk.com/share.php?url=http://narekchang.github.io/timekiller/index.html&image=https://static40.siliconrus.cmtt.ru/paper-preview-new/s/sony-vk-deal/5dddc9d66f-normal.jpg" target="_blank">
 								<!-- Put this script tag to the <head> of your page -->
-<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+								<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
 
-<script type="text/javascript">
-  VK.init({apiId: 5012976, onlyWidgets: true});
-</script>
+								<script type="text/javascript">
+								  VK.init({apiId: 5012976, onlyWidgets: true});
+								</script>
 
-<!-- Put this div tag to the place, where the Like block will be -->
-<div id="vk_like"></div>
-<script type="text/javascript">
-VK.Widgets.Like("vk_like", {type: "vertical"});
-</script>
-							</div>
+								<!-- Put this div tag to the place, where the Like block will be -->
+								<div id="vk_like"></div>
+								<script type="text/javascript">
+								VK.Widgets.Like("vk_like", {type: "vertical"});
+								</script>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="start-block-wrap blank-block-wrap">
+			<div class="start-block-wrap blank-block-wrap hide">
 				<div class="start-block blank-block">
 					<div class="title">
 						How to play
