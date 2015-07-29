@@ -12,10 +12,16 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/emoji.css">
 		<link rel="stylesheet" href="css/main.css">
-
-		<script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.4";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 		<div class="container header">
 			<div class="title left">Memory training</div>
 		</div>
@@ -28,15 +34,24 @@
 					<div class="scl-btns-wrapper">
 						Share your result with friends:
 						<div class="scl-btns">
-							<script type="text/javascript">
-document.write(VK.Share.button({
-  url: 'http://mysite.com',
-  title: 'Хороший сайт',
-  description: 'Это мой собственный сайт, я его очень долго делал',
-  image: 'http://mysite.com/mypic.jpg',
-  noparse: true
-}));
-</script>
+							<span>
+								<script type="text/javascript">
+							document.write(VK.Share.button({
+							  url: 'http://narekchang.github.io/timekiller/index.html',
+							  title: 'Memory training',
+							  description: 'Click on any block. Try to remember the displayed image. Click on another block. If the images match, the blocks will be removed. The level is passed, when there are no blocks left on the screen.',
+							  image: 'http://narekchang.github.io/timekiller/images/preview.png',
+							  noparse: true
+							 }));
+							</script>
+							</span>
+							<span>
+								<a href="https://twitter.com/share" class="twitter-share-button" data-text="Memory training">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+							</span>
+							<span>
+								<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
+							</span>
 						</div>
 					</div>
 				</div>
