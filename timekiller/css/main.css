@@ -216,6 +216,7 @@ a:hover{
 	font-weight: 400;
 	font-size: 16px;
 	margin-bottom: 20px;
+	padding: 0 10px;
 }
 .hide{
 	display: none;
@@ -266,4 +267,10 @@ a:hover{
 }
 .result-block .scl-btns span:last-child{
 	margin-right: 0;
+}
+@media (max-width: 400px) {
+	.level-set-block .level{
+		font-size: 16px;
+		float: none;
+	}
 }
