@@ -6,6 +6,8 @@ $(document).ready(function() {
 
 	function renderCellWrap(size,i_max,n_max){
 
+		$("#score, #result").html(0);
+
 		var arrayEmojiEasy = [	"emoji1f46c", "emoji1f46c",	"emoji1f413", "emoji1f413",	"emoji1f3c8", "emoji1f3c8",	"emoji1f68d", "emoji1f68d",	"emoji1f496", "emoji1f496",	"emoji2615", "emoji2615",	"emoji1f31a", "emoji1f31a",	"emoji1f30d", "emoji1f30d",	"emoji2708", "emoji2708",	"emoji1f354", "emoji1f354",	"emoji1f4f7", "emoji1f4f7",	"emoji1f3b1", "emoji1f3b1",	"emoji1f340", "emoji1f340",	"emoji1f48a", "emoji1f48a",	"emoji1f699", "emoji1f699",	"emoji1f47d", "emoji1f47d",	"emoji1f694", "emoji1f694",	"emoji1f451", "emoji1f451",	"emoji270f", "emoji270f",	"emoji26a1", "emoji26a1",	"emoji1f4b0", "emoji1f4b0",	"emoji1f3c9", "emoji1f3c9",	"emoji1f60d", "emoji1f60d",	"emoji1f425", "emoji1f425", "emoji1f680", "emoji1f680", "emoji1f411", "emoji1f411", "emoji1f60a", "emoji1f60a", "emoji1f437", "emoji1f437", "emoji1f473", "emoji1f473", "emoji1f6a0", "emoji1f6a0","emoji1f36b", "emoji1f36b", "emoji1f3c0", "emoji1f3c0" ];
 		
 		$(".cell-wrapper").remove();
@@ -38,8 +40,7 @@ $(document).ready(function() {
 	$(".cell.hidden").live("click", function(){
 
 		var score = +$("#score").html()+1;
-		$("#score").html(score);
-		$("#result").html(score);
+		$("#score, #result").html(score);
 
 		$(this).removeClass("hidden").addClass("show");
 
