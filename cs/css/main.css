@@ -914,8 +914,6 @@ a:hover
 .modal_block_wrap
 {
     position: absolute;
-
-    overflow-x: hidden;
     overflow-y: scroll;
 
     width: 100%;
@@ -972,14 +970,9 @@ a:hover
 }
 .modal_block.qanda
 {
-    display: inline-block;
-
     width: 660px;
     
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    display: inline-block;
     margin: auto;
 }
 .modal_block.qanda .title{
