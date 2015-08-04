@@ -975,6 +975,7 @@ a:hover
 }
 .content .profile_content .usr_info
 {
+    position: relative;
     padding-bottom: 25px;
 
     border-bottom: 1px solid #3d3f45;
@@ -1022,6 +1023,7 @@ a:hover
 
     background: #3d3f45;
 }
+.content .profile_content .usr_info .usr_rank,
 .content .profile_content .usr_info .usr_name .usr_rank
 {
     font-size: 16px;
@@ -1044,6 +1046,12 @@ a:hover
 
     color: #33363c;
     background: #f6ae46;
+}
+.content .profile_content .usr_info .usr_rank{
+    left: auto;
+    top: 8px;
+    right: 0;
+    margin: 0;
 }
 .content .profile_content .usr_info .usr_name .usr_verif{
     width: 28px;
