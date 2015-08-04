@@ -1,5 +1,6 @@
 .country_flag:before { background:url(../files/imgs/flags.png) no-repeat; }
 
+.country_flag.blank:before {background-position: 0 0}
 .country_flag.ad:before {background-position: -18px 0}
 .country_flag.ae:before {background-position: -36px 0}
 .country_flag.af:before {background-position: -54px 0}
