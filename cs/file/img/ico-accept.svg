@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15588) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2-bets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="2-bets-win-full" sketch:type="MSArtboardGroup" transform="translate(-677.000000, -497.000000)" fill="#79CF76">
+            <g id="Bet-info" sketch:type="MSLayerGroup">
+                <g id="Box" transform="translate(410.000000, 61.000000)" sketch:type="MSShapeGroup">
+                    <g id="Achievments" transform="translate(25.000000, 258.000000)">
+                        <g id="3" transform="translate(0.000000, 161.000000)">
+                            <g id="ic-orange-check-20-copy" transform="translate(240.000000, 15.000000)">
+                                <path d="M10,18 C14.418278,18 18,14.418278 18,10 C18,5.581722 14.418278,2 10,2 C5.581722,2 2,5.581722 2,10 C2,14.418278 5.581722,18 10,18 Z M7.9000001,13.5142197 L8.60710688,14.2213264 L9.31421366,13.5142197 L14.8142137,8.01421967 L13.4000001,6.6000061 L8.63380473,11.4195972 L6.81421366,9.6000061 L5.4000001,11.0142197 L7.9000001,13.5142197 Z" id="Oval-11"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

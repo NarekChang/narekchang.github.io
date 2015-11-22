@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-star-white-20</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="4-faq-&amp;-others" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="4-faq" sketch:type="MSArtboardGroup" transform="translate(-342.000000, -24.000000)">
+            <g id="Menu" sketch:type="MSLayerGroup" transform="translate(170.000000, 0.000000)">
+                <g id="Left" transform="translate(15.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <g id="ic-star-white-20" transform="translate(157.000000, 23.000000)">
+                        <rect id="shape" x="0" y="0" width="20" height="20"></rect>
+                        <polygon id="Star-2" fill="#FFFFFF" points="10 16.2544125 3.81966011 19.5 5 12.6257354 3.85802501e-14 7.75735421 6.90983006 6.75441253 10 0.5 13.0901699 6.75441253 20 7.75735421 15 12.6257354 16.1803399 19.5 "></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
