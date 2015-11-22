@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15588) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-up</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="1-2" sketch:type="MSArtboardGroup" transform="translate(-1160.000000, -667.000000)" fill="#B8C5CC">
+            <g id="Right" sketch:type="MSLayerGroup" transform="translate(1140.000000, 64.000000)">
+                <g id="History" transform="translate(20.000000, 510.000000)" sketch:type="MSShapeGroup">
+                    <g id="1" transform="translate(0.000000, 90.000000)">
+                        <path d="M6.70079973,8.01551983 L0.320969634,14.396176 C-0.108051068,14.8252522 -0.105452155,15.5235215 0.329487426,15.9585174 L3.04052345,18.6699044 C3.47424839,19.1036856 4.18065047,19.1004901 4.60266263,18.6784233 L10.9828871,12.2973728 L15.2201975,16.5344514 C15.6461439,16.9603745 15.9999997,16.821973 15.9999997,16.2147669 L16,3 L2.7845097,3 C2.17775995,3 2.03413476,3.34911022 2.4648076,3.7797595 L6.70079973,8.01551983 Z" id="ic-up"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

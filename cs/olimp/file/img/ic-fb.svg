@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="9px" height="18px" viewBox="0 0 9 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 75</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="1" sketch:type="MSArtboardGroup" transform="translate(-440.000000, -23.000000)" fill="#A1ACB3">
+            <g id="Menu" sketch:type="MSLayerGroup">
+                <g id="Left" transform="translate(200.000000, 18.000000)" sketch:type="MSShapeGroup">
+                    <g id="fb" transform="translate(235.000000, 4.000000)">
+                        <path d="M10.8417553,19 L10.8417553,10.7893834 L13.4952852,10.7893834 L13.8925297,7.58949369 L10.8417553,7.58949369 L10.8417553,5.54658575 C10.8417553,4.62014221 11.0893913,3.98878264 12.3685294,3.98878264 L14,3.98798578 L14,1.12608802 C13.7177799,1.0871644 12.7493672,1 11.6227295,1 C9.27054125,1 7.66031686,2.49117323 7.66031686,5.22974133 L7.66031686,7.58949369 L5,7.58949369 L5,10.7893834 L7.66031686,10.7893834 L7.66031686,19 L10.8417553,19" id="Fill-75"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
