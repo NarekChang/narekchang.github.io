@@ -133,8 +133,8 @@ a:hover{
     transition: all .15s ease 0s;
 }
 .cell-wrapper .cell.empty{
-	background: transparent;
-	border-color: transparent;
+	background: transparent!important;
+	border-color: transparent!important;
 }
 .blank-block-wrap{
 	position: absolute;

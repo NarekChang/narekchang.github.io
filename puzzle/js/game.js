@@ -10,6 +10,8 @@ $(document).ready(function() {
 
 		$(".cell-wrapper").remove();
 
+		$('body').prepend('<style>.cell{background-image: url(images/bg_' + Math.round(getRandomArbitrary(1, 5)) + '.jpg)!important;</style>');
+
 		var $cellWrapper = $('<div class="cell-wrapper"/>');
 		$(".game-container").append( $cellWrapper );
 
