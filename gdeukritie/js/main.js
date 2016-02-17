@@ -1,4 +1,11 @@
 $(document).ready(function(){
+  $('html').click(function() {
+      $("#select-city_check").prop("checked", false);
+  });
+  $(".select-city_block").click(function(event){
+      event.stopPropagation();
+  });
+
   $(".header .select-city_block .select-city li label").click(function(){
     var that = $(this),
     checkSelect = $("#select-city_check"),

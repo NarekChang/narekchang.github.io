@@ -55,6 +55,9 @@ body{
   margin-top: 5px;
   padding: 0 20px;
 }
+#add_obj_mini{
+  display: none;
+}
 .map{
   position: absolute;
   margin: auto;
@@ -88,6 +91,7 @@ body{
   background: url(../files/img/scl_btns.png) no-repeat;
   background-size: 150px;
   cursor: pointer;
+  border-radius: 3px;
 }
 .scl-btns .scl-btn:last-child{
   margin-right: 0;
@@ -355,6 +359,9 @@ body{
 .p-r_20{
   padding-right: 20px!important;
 }
+.p-r_15{
+  padding-right: 15px;
+}
 .p-r_12{
   padding-right: 12px;
 }
@@ -408,6 +415,9 @@ body{
 }
 .p-l_20{
   padding-left: 20px!important;
+}
+.p-l_15{
+  padding-left: 15px;
 }
 .p-l_14{
   padding-left: 14px;
@@ -843,4 +853,86 @@ body{
 }
 .box-sizing_bb{
   box-sizing: border-box;
+}
+@media (max-width: 870px){
+  .footer .info{
+    display: none;
+  }
+}
+@media (max-width: 840px){
+  .header .logo{
+    width: 39px;
+    height: 29px;
+    background: url(../files/img/logo_mini.png) no-repeat;
+    background-size: 39px;
+  }
+}
+@media (max-width: 700px){
+  #add_obj_mini{
+    display: inline-block;
+  }
+  #add_obj{
+    display: none;
+  }
+}
+@media (max-width: 630px){
+  .scl-btns{
+    padding-top: 16px;
+  }
+  .scl-btns .scl-btn{
+    width: 20px;
+    height: 20px;
+    background-size: 100px;
+    margin-right: 1px;
+  }
+  .scl-btns .scl-btn.fb{
+    background-position: -27px 0;
+  }
+  .scl-btns .scl-btn.tw{
+    background-position: -53px 0;
+  }
+  .scl-btns .scl-btn.ok{
+    background-position: -80px 0;
+  }
+  .row{
+    padding: 0 20px;
+  }
+}
+@media (max-width: 560px){
+  .share_text{display: none;}
+}
+@media (max-width: 510px){
+  .share_text{display: none;}
+}
+@media (max-width: 509px){
+  .header{
+    height: 90px;
+  }
+  #add_obj_mini{
+    margin-top: -10px;
+  }
+  .about_prjct{
+    padding-right: 88px;
+    padding-left: 43px;
+  }
+}
+@media (max-width: 404px){
+  .about_prjct{
+    padding-right: 48px;
+    padding-left: 43px;
+  }
+  #add_obj_mini{
+    margin-top: 5px;
+  }
+}
+@media (max-width: 364px){
+  .about_prjct{
+    padding-right: 0;
+    padding-left: 43px;
+  }
+}
+@media (max-width: 336px){
+  .about_prjct{
+    padding-left: 16px;
+  }
 }
