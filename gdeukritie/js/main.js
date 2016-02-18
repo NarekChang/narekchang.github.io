@@ -15,4 +15,22 @@ $(document).ready(function(){
     currentCity.html(cityName);
     checkSelect.prop( "checked", false );
   });
+
+  $(".modal_call").click(function(){
+    var that = $(this),
+    el_id = $("#" + that.data("el-id"));
+
+    $(".modal_block").removeClass("show");
+    el_id.addClass("show");
+
+  });
+
+  $(".close_modal").click(function(){
+   var that = $(this),
+   parent = that.parents(".modal_block");
+
+   parent.removeClass("show");
+ });
+
+
 });
