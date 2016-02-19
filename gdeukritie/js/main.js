@@ -22,15 +22,13 @@ $(document).ready(function(){
 
     $(".modal_block").removeClass("show");
     el_id.addClass("show");
-
   });
 
   $(".close_modal").click(function(){
-   var that = $(this),
-   parent = that.parents(".modal_block");
+    var that = $(this),
+    parent = that.parents(".modal_block");
 
-   parent.removeClass("show");
- });
-
+    parent.removeClass("show");
+   });
 
 });

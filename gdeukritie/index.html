@@ -45,9 +45,9 @@
               </ul>
             </span>
           </span>
-          <span class="plot left p-t_14 p-r_15 about_pr cursor_p header_item">О проекте</span>
-          <div class="btn right" id="add_obj">Добавить объект</div>
-          <div class="btn right" id="add_obj_mini">Добавить</div>
+          <span class="plot left p-t_14 p-r_15 about_pr cursor_p header_item modal_call" data-el-id="modal_2">О проекте</span>
+          <div class="btn right modal_call" data-el-id="modal_3" id="add_obj">Добавить объект</div>
+          <div class="btn right modal_call" data-el-id="modal_3" id="add_obj_mini">Добавить</div>
         </div>
       </div>
       <div class="map">
@@ -82,6 +82,89 @@
             <div><a href="#wikimapia.org" target="_blank" class="color_black">wikimapia.org</a></div>
             <div class="p-t_10"><a href="#sitename.com" target="_blank" class="color_black">sitename.com</a></div>
             <div class="p-t_10"><a href="#sitename.com" target="_blank" class="color_black">sitename.com</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal_bg close_modal"></div>
+    </div>
+    <div class="modal_block" id="modal_2">
+      <div class="modal_container">
+        <div class="modal_content align_center">
+          <div class="close_btn close_modal"></div>
+          <div class="p-t_20 color_d-black f-w_bold f-s_18">О проекте</div>
+          <div class="f-s_16 p-t_60 p-b_20 f-s_14 color_black align_center p-r_50 p-l_50">
+            <div class=""><img src="files/img/logo_about.png" width="80" alt=""></div>
+            <div class="l-h_19 p-t_18">
+              Где Укрытие помогает быстро найти<br>
+              убежище рядом с домом.<br>
+              и еще<br>
+              куча<br>
+              текста<br>
+              будет
+            </div>
+            <div class="p-t_54">
+              Связь с нами: <a href="mailto:help@gdeukritie.ru" class="color_green">help@gdeukritie.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal_bg close_modal"></div>
+    </div>
+    <div class="modal_block" id="modal_3">
+      <div class="modal_container">
+        <div class="modal_content align_center">
+          <div class="close_btn close_modal"></div>
+          <div class="p-t_20 color_d-black f-w_bold f-s_18">Добавить объект</div>
+          <div class="f-s_16 p-t_60 p-b_23 f-s_14 color_black align_center left">
+            <form action="" class="add-obj_form">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Адрес</td>
+                    <td>
+                      <input type="text">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Тип укрытия</td>
+                    <td>
+                      <select name="type">
+                        <option value="Первый тип" select>Первый тип</option>
+                        <option value="Второй тип">Второй тип</option>
+                        <option value="Третий">Третий</option>
+                        <option value="Восьмой"></option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Комментарий</td>
+                    <td>
+                      <textarea name="name">
+
+                      </textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Прикрепить файл</td>
+                    <td>
+                      <input type="file" accept="image/jpeg,image/png,image/gif">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Введите код</td>
+                    <td>
+                      <div>
+                        <img src="files/img/captcha.png" class="captcha" alt="">
+                      </div>
+                      <input type="text">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="p-t_20">
+                <button class="btn green">Отправить на проверку</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
