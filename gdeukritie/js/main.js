@@ -24,11 +24,15 @@ $(document).ready(function(){
     el_id.addClass("show");
   });
 
-  $(".close_modal").click(function(){
+  $(".close_btn").click(function(){
     var that = $(this),
-    parent = that.parents(".modal_block");
+    parent = (that.hasClass("more-info_close") || that.hasClass("more-info_bg")) ? that.parents(".more-info_wrapper") : that.parents(".modal_block");
 
     parent.removeClass("show");
    });
 
+   $(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
 });

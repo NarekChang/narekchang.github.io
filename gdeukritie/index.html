@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300,300italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-buttons.css" />
+    <link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" />
+    <link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css" media="screen" />
+
   </head>
   <body>
     <div class="wrapper">
@@ -51,7 +56,57 @@
         </div>
       </div>
       <div class="map">
+        <div id="map"></div>
+        <div class="more-info_wrapper">
+          <div class="more-info_bg close_btn"></div>
+          <div class="more-info_close close_btn"></div>
+          <div class="more-info_block align_left">
+            <div class="block">
+              <div class="color_black f-s_16">Ленинский пр. 51 к2</div>
+              <div class="color_grey f-s_13">Подземная парковка</div>
+              <div class="btn green d_i-block m-t_10">Проложить маршрут</div>
+            </div>
+            <div class="block">
+              <div>
+                <div class="color_black f-s_16">530 м</div>
+                <div class="color_grey f-s_13">Расстояние от вас</div>
+              </div>
+              <div class="m-t_9">
+                <div class="color_black f-s_16">5 мин. пешком, 2 мин. бегом</div>
+                <div class="color_grey f-s_13">Сколько добираться</div>
+              </div>
+            </div>
+            <div class="block p-b_11">
+              <div>
+                <div class="color_black f-s_16">Фотографии</div>
+                <div class="p-t_7">
+              		<a class="fancybox" href="files/img/0.jpeg" data-fancybox-group="gallery" title=""><img src="files/img/zaglushka.png" alt=""></a>
+              		<a class="fancybox" href="files/img/2.png" data-fancybox-group="gallery" title=""><img src="files/img/zaglushka.png" alt=""></a>
+              		<a class="fancybox" href="files/img/0.jpeg" data-fancybox-group="gallery" title=""><img src="files/img/zaglushka.png" alt=""></a>
+              		<a class="fancybox" href="files/img/2.png" data-fancybox-group="gallery" title=""><img src="files/img/zaglushka.png" alt=""></a>
+              		<a class="fancybox" href="files/img/2.png" data-fancybox-group="gallery" title=""><img src="files/img/zaglushka.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="block">
+              <div>
+                <div class="color_black f-s_16">Описание объекат</div>
+                <div class="color_grey f-s_13">
+                  3, Прием и выдача грузов повагонными и мелкими
+                  отправками, загружаемых целыми вагонами, только
+                  на подъездных путях и местах необщего пользова…
+                  <div class="color_green f-w_bold cursor_p p-t_2">Читать полностью</div>
+                </div>
+              </div>
+            </div>
+            <div class="block border_none">
+              <div>
+                <div class="color_black f-s_16">Комментарии</div>
 
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="footer">
         <div class="row">
@@ -173,4 +228,15 @@
   </body>
   <script src="js/jquery-1.12.0.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
+
+  <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+      async defer></script>
 </html>
