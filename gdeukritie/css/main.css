@@ -297,7 +297,7 @@ a:hover{
   transition: .3s all;
 }
 .more-info_wrapper.show .more-info_block,
-.more-info_wrapper.show .more-info_close{
+.more-info_wrapper.show .more-info_close_btn{
   transform: translateX(0);
 
   -webkit-transition: .3s all;
@@ -356,7 +356,7 @@ a:hover{
   z-index: 999;
 }
 .modal_block .modal_container .modal_content .close_btn,
-.more-info_wrapper .more-info_close{
+.more-info_wrapper .more-info_close_btn{
   position: absolute;
   margin: auto;
   right: -50px;
@@ -373,14 +373,14 @@ a:hover{
   -o-transition: .15s all;
   transition: .15s all;
 }
-.more-info_wrapper .more-info_close{
+.more-info_wrapper .more-info_close_btn{
   top: 65px;
   right: 380px;
 
   transform: translateX(500px);
 }
 .modal_block .modal_container .modal_content .close_btn:hover,
-.more-info_wrapper .more-info_close:hover{
+.more-info_wrapper .more-info_close_btn:hover{
   background-color: rgba(255, 255, 255, 0.9);
 
   -webkit-transition: .15s all;
@@ -787,6 +787,9 @@ a:hover{
 .p-t_40{
   padding-top: 40px;
 }
+.p-t_39{
+  padding-top: 39px;
+}
 .p-t_36{
   padding-top: 36px;
 }
@@ -918,6 +921,9 @@ a:hover{
 }
 .p-b_35{
   padding-bottom: 35px;
+}
+.p-b_34{
+  padding-bottom: 34px;
 }
 .p-b_23{
   padding-bottom: 23px;
@@ -1241,7 +1247,7 @@ a:hover{
   }
 }
 @media (max-width: 460px){
-  .more-info_wrapper .more-info_close{
+  .more-info_wrapper .more-info_close_btn{
     right: 0;
     top: 90px;
     z-index: 2;

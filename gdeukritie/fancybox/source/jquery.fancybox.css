@@ -97,8 +97,8 @@
 	height: 50px;
 	cursor: pointer;
 	z-index: 8040;
-	background: url(helpers/close_ico.png) center no-repeat rgba(255, 255, 255, 0.8);
-	background-size: 16px;
+	background: url(helpers/close_ico.png) center no-repeat rgba(255, 255, 255, 0.8)!important;
+	background-size: 16px!important;
 }
 
 .fancybox-nav {
