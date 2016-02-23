@@ -27,7 +27,7 @@ $(document).ready(function(){
   $(".close_btn").click(function(){
     var that = $(this),
     parent = (that.hasClass("more-info_close")) ? that.parents(".more-info_wrapper") : that.parents(".modal_block");
-
+    
     parent.removeClass("show");
    });
 

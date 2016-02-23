@@ -18,6 +18,7 @@ function ZoomControl(controlDiv, map) {
   /* Change this to be the .png image you want to use */
   zoomInButton.style.backgroundRepeat = "no-repeat",
   zoomInButton.style.backgroundImage = 'url("files/img/zoom_plus.png")';
+  zoomInButton.style.backgroundSize = '56px';
   controlWrapper.appendChild(zoomInButton);
 
   // Set CSS for the zoomOut
@@ -26,6 +27,7 @@ function ZoomControl(controlDiv, map) {
   zoomOutButton.style.height = '56px';
   /* Change this to be the .png image you want to use */
   zoomOutButton.style.backgroundImage = 'url("files/img/zoom_minus.png")';
+  zoomOutButton.style.backgroundSize = '56px';
   controlWrapper.appendChild(zoomOutButton);
 
   // Setup the click event listener - zoomIn
@@ -49,6 +51,7 @@ function CenterControl(controlDiv, map) {
   controlUI.style.width = '56px';
   controlUI.style.height = '56px';
   controlUI.style.backgroundImage = 'url(files/img/geo_location.png)';
+  controlUI.style.backgroundSize = '56px';
   controlDiv.appendChild(controlUI);
 
   // Setup the click event listeners: simply set the map to Chicago.
@@ -65,18 +68,30 @@ function initMap() {
     disableDefaultUI: true
   });
 
+  var marker_ico = {
+    url: 'files/img/marker_point.png',
+    size: new google.maps.Size(36, 36),
+    origin: new google.maps.Point(0, 0),
+    scaledSize: new google.maps.Size(36, 36)
+  };
   var marker = new google.maps.Marker({
     position: {lat: 59.95923521858213, lng: 30.320327931213377},
     map: map,
-    icon: 'files/img/marker_point.png'
+    icon: marker_ico
   });
-  
+
 //---Временная заглушка----//
   marker.addListener('click', function() {
     $(".more-info_wrapper").addClass("show");
   });
 
-  var infoWindow = new google.maps.InfoWindow({map: map});
+
+  var punkt_ico = {
+    url: 'files/img/point.png',
+    size: new google.maps.Size(25, 25),
+    origin: new google.maps.Point(0, 0),
+    scaledSize: new google.maps.Size(25, 25)
+  };
 
   // Try HTML5 geolocation.
   if (navigator.geolocation) {
@@ -88,10 +103,8 @@ function initMap() {
       var punkt = new google.maps.Marker({
         position: pos,
         map: map,
-        icon: 'files/img/point.png'
+        icon: punkt_ico
       });
-    }, function() {
-      handleLocationError(true, infoWindow, map.getCenter());
     });
   }
 

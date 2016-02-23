@@ -65,6 +65,7 @@ a:hover{
   -o-transition: .15s all;
   transition: .15s all;
 }
+.btn:hover,
 .header .header_item:hover{
   opacity: .9;
 
@@ -84,6 +85,12 @@ a:hover{
   display: inline-block;
   margin-top: 5px;
   padding: 0 20px;
+}
+.btn{
+  -webkit-transition: .15s all;
+  -moz-transition: .15s all;
+  -o-transition: .15s all;
+  transition: .15s all;
 }
 #add_obj_mini{
   display: none;
@@ -175,6 +182,7 @@ a:hover{
   width: 10px;
   height: 8px;
   background: url(../files/img/arrow_down.png) no-repeat;
+  background-size: 10px;
 }
 .select-city_block .select-city{
   position: absolute;;
@@ -231,6 +239,7 @@ a:hover{
   height: 10px;
   display: inline-block;
   background: url(../files/img/select_city.png) no-repeat;
+  background-size: 13px;
 }
 .more-info_wrapper,
 .modal_block{
