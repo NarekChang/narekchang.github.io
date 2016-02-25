@@ -14,11 +14,13 @@ function ZoomControl(controlDiv, map) {
   // Set CSS for the zoomIn
   var zoomInButton = document.createElement('div');
   zoomInButton.style.width = '56px';
-  zoomInButton.style.height = '60px';
+  zoomInButton.style.height = '56px';
+  zoomInButton.style.marginBottom = '4px';
   /* Change this to be the .png image you want to use */
   zoomInButton.style.backgroundRepeat = "no-repeat",
   zoomInButton.style.backgroundImage = 'url("files/img/zoom_plus.png")';
   zoomInButton.style.backgroundSize = '56px';
+  zoomInButton.className = 'cntrl_btn';
   controlWrapper.appendChild(zoomInButton);
 
   // Set CSS for the zoomOut
@@ -28,6 +30,7 @@ function ZoomControl(controlDiv, map) {
   /* Change this to be the .png image you want to use */
   zoomOutButton.style.backgroundImage = 'url("files/img/zoom_minus.png")';
   zoomOutButton.style.backgroundSize = '56px';
+  zoomOutButton.className = 'cntrl_btn';
   controlWrapper.appendChild(zoomOutButton);
 
   // Setup the click event listener - zoomIn
@@ -52,6 +55,7 @@ function CenterControl(controlDiv, map) {
   controlUI.style.height = '56px';
   controlUI.style.backgroundImage = 'url(files/img/geo_location.png)';
   controlUI.style.backgroundSize = '56px';
+  controlUI.className = 'cntrl_btn';
   controlDiv.appendChild(controlUI);
 
   // Setup the click event listeners: simply set the map to Chicago.

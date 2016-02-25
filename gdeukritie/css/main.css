@@ -455,6 +455,37 @@ a:hover{
   -o-transition: .2s all;
   transition: .2s all;
 }
+.cntrl_btn{
+  position: relative;
+}
+.cntrl_btn:before{
+  content: '';
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 50px;
+  width: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  z-index: -1;
+  opacity: 0;
+
+  -webkit-transition: .15s all;
+  -moz-transition: .15s all;
+  -o-transition: .15s all;
+  transition: .15s all;
+}
+.cntrl_btn:hover:before{
+  opacity: 1;
+
+  -webkit-transition: .15s all;
+  -moz-transition: .15s all;
+  -o-transition: .15s all;
+  transition: .15s all;
+}
 /*-----Style's-----*/
 .plot{
   display: inline-block;
@@ -1220,15 +1251,15 @@ a:hover{
   .share_text{display: none;}
 }
 @media (max-width: 509px){
-  .header{
-    height: 90px;
-  }
-  .more-info_wrapper .more-info_block{
-    top: 90px;
-    padding-bottom: 135px;
-  }
   #add_obj_mini{
-    margin-top: -10px;
+    margin-top: 5px;
+    font-size: 32px;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
   }
   .about_prjct{
     padding-right: 88px;
@@ -1254,12 +1285,16 @@ a:hover{
   .add-obj_form table tr td input[type="text"]{
     max-width: 228px;
   }
-}
-@media (max-width: 460px){
   .more-info_wrapper .more-info_close_btn{
     right: 0;
     top: 90px;
     z-index: 2;
+  }
+}
+@media (max-width: 433px){
+  .select-city_block .cur_city{
+    margin-right: 26px;
+    padding-left: 18px;
   }
 }
 @media (max-width: 404px){
@@ -1279,6 +1314,14 @@ a:hover{
     max-width: 188px;
   }
 }
+@media (max-width: 389px){
+  .header{
+    font-size: 12px;
+  }
+  .select-city_block .cur_city:after{
+    display: none;
+  }
+}
 @media (max-width: 364px){
   .about_prjct{
     padding-right: 0;
@@ -1288,6 +1331,13 @@ a:hover{
 @media (max-width: 336px){
   .about_prjct{
     padding-left: 16px;
+  }
+  .select-city_block .cur_city{
+    margin-right: 10px;
+    padding-left: 14px;
+  }
+  #add_obj_mini{
+    position: absolute;
   }
 }
 @media (max-width: 320px){
