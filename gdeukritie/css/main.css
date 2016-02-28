@@ -1229,22 +1229,13 @@ a:hover{
 }
 @media (max-width: 630px){
   .scl-btns{
-    padding-top: 16px;
+    padding-top: 10px;
   }
   .scl-btns .scl-btn{
-    width: 25px;
-    height: 25px;
-    background-size: 122px;
     margin-right: 1px;
   }
-  .scl-btns .scl-btn.fb{
-    background-position: -32px 0;
-  }
-  .scl-btns .scl-btn.tw{
-    background-position: -64px 0;
-  }
-  .scl-btns .scl-btn.ok{
-    background-position: -98px 0;
+  .share{
+    margin-right: -10px;
   }
   .row{
     padding: 0 20px;
