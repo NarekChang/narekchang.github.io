@@ -93,7 +93,17 @@ a:hover{
   transition: .15s all;
 }
 #add_obj_mini{
+  position: absolute;
+  right: 5px;
   display: none;
+  margin-top: 5px;
+  font-size: 32px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
 }
 .map{
   position: absolute;
@@ -1210,6 +1220,9 @@ a:hover{
   #add_obj_mini{
     display: inline-block;
   }
+  .cntrl_btn{
+    margin-left: 17px!important;
+  }
   #add_obj{
     display: none;
   }
@@ -1219,19 +1232,19 @@ a:hover{
     padding-top: 16px;
   }
   .scl-btns .scl-btn{
-    width: 20px;
-    height: 20px;
-    background-size: 100px;
+    width: 25px;
+    height: 25px;
+    background-size: 122px;
     margin-right: 1px;
   }
   .scl-btns .scl-btn.fb{
-    background-position: -27px 0;
+    background-position: -32px 0;
   }
   .scl-btns .scl-btn.tw{
-    background-position: -53px 0;
+    background-position: -64px 0;
   }
   .scl-btns .scl-btn.ok{
-    background-position: -80px 0;
+    background-position: -98px 0;
   }
   .row{
     padding: 0 20px;
@@ -1251,16 +1264,6 @@ a:hover{
   .share_text{display: none;}
 }
 @media (max-width: 509px){
-  #add_obj_mini{
-    margin-top: 5px;
-    font-size: 32px;
-    width: 40px;
-    height: 40px;
-    line-height: 42px;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 0;
-  }
   .about_prjct{
     padding-right: 88px;
     padding-left: 43px;
@@ -1315,9 +1318,6 @@ a:hover{
   }
 }
 @media (max-width: 389px){
-  .header{
-    font-size: 12px;
-  }
   .select-city_block .cur_city:after{
     display: none;
   }
@@ -1327,6 +1327,9 @@ a:hover{
     padding-right: 0;
     padding-left: 43px;
   }
+  .header{
+    font-size: 13px;
+  }
 }
 @media (max-width: 336px){
   .about_prjct{
@@ -1335,9 +1338,6 @@ a:hover{
   .select-city_block .cur_city{
     margin-right: 10px;
     padding-left: 14px;
-  }
-  #add_obj_mini{
-    position: absolute;
   }
 }
 @media (max-width: 320px){

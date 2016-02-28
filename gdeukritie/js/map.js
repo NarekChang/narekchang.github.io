@@ -8,13 +8,13 @@ function ZoomControl(controlDiv, map) {
   controlWrapper.style.cursor = 'pointer';
   controlWrapper.style.width = '56px';
   controlWrapper.style.height = '112px';
-  controlWrapper.style.marginLeft = '27px';
   controlDiv.appendChild(controlWrapper);
 
   // Set CSS for the zoomIn
   var zoomInButton = document.createElement('div');
   zoomInButton.style.width = '56px';
   zoomInButton.style.height = '56px';
+  zoomInButton.style.marginLeft = '27px';
   zoomInButton.style.marginBottom = '4px';
   /* Change this to be the .png image you want to use */
   zoomInButton.style.backgroundRepeat = "no-repeat",
@@ -27,6 +27,7 @@ function ZoomControl(controlDiv, map) {
   var zoomOutButton = document.createElement('div');
   zoomOutButton.style.width = '56px';
   zoomOutButton.style.height = '56px';
+  zoomOutButton.style.marginLeft = '27px';
   /* Change this to be the .png image you want to use */
   zoomOutButton.style.backgroundImage = 'url("files/img/zoom_minus.png")';
   zoomOutButton.style.backgroundSize = '56px';
