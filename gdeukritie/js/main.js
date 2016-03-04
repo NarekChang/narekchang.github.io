@@ -31,10 +31,17 @@ $(document).ready(function(){
     parent.removeClass("show");
    });
 
-   $(".fancybox").fancybox({
-		openEffect	: 'none',
-		closeEffect	: 'none',
-    prevEffect : 'none',
-    nextEffect : 'none',
-	});
+   if(device.tablet() || device.mobile()){
+     $(".fancybox").fancybox({
+  		openEffect	: 'none',
+  		closeEffect	: 'none',
+      prevEffect : 'none',
+      nextEffect : 'none'
+  	});
+   }else{
+     $(".fancybox").fancybox({
+  		openEffect	: 'none',
+  		closeEffect	: 'none'
+  	});
+   }
 });
