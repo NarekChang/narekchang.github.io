@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="29px" viewBox="0 0 35 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>cart + cart-path + cart-path</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main" transform="translate(-1341.000000, -129.000000)" fill="#000000">
+            <g id="МУЖСКОЕ-+-ЖЕНСКОЕ-Copy-2" transform="translate(1205.000000, 127.000000)">
+                <g id="cart-+-cart-path-+-cart-path" transform="translate(137.000000, 3.000000)">
+                    <path d="M0,1.31707317 L0.329268293,0 L5.82406807,0 L6.82073545,3.95121956 L33.5853659,3.95121951 L30.8314857,20.7560976 L9.42904668,20.7560976 L4.35685062,1.31707323 L0,1.31707317 Z M31.807309,5.26829268 L29.4102262,19.4390244 L10.776053,19.4390244 L7.24390244,5.26829268 L31.807309,5.26829268 Z" id="cart" stroke="#000000" stroke-width="0.2" stroke-linejoin="round"></path>
+                    <path d="M27.6707317,28 C28.943681,28 29.9756098,26.9680712 29.9756098,25.695122 C29.9756098,24.4221727 28.943681,23.3902439 27.6707317,23.3902439 C26.3977825,23.3902439 25.3658537,24.4221727 25.3658537,25.695122 C25.3658537,26.9680712 26.3977825,28 27.6707317,28 L27.6707317,28 Z" id="cart-path"></path>
+                    <path d="M13.1585366,28 C14.4314858,28 15.4634146,26.9680712 15.4634146,25.695122 C15.4634146,24.4221727 14.4314858,23.3902439 13.1585366,23.3902439 C11.8855873,23.3902439 10.8536585,24.4221727 10.8536585,25.695122 C10.8536585,26.9680712 11.8855873,28 13.1585366,28 L13.1585366,28 Z" id="cart-path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
