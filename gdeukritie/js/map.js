@@ -54,9 +54,10 @@ function CenterControl(controlDiv, map) {
   controlUI.style.cursor = 'pointer';
   controlUI.style.width = '56px';
   controlUI.style.height = '56px';
-  controlUI.style.backgroundImage = 'url(files/img/geo_location.png)';
+  controlUI.style.backgroundImage = 'url(files/img/geo_location_no-active.png)';
   controlUI.style.backgroundSize = '56px';
   controlUI.className = 'cntrl_btn';
+  controlUI.id = 'location';
   controlDiv.appendChild(controlUI);
 
   // Setup the click event listeners: simply set the map to Chicago.
@@ -85,8 +86,14 @@ function initMap() {
     icon: marker_ico
   });
 
+  map.addListener('center_changed', function() {
+    // 3 seconds after the center of the map has changed, pan back to the
+    // marker.
+    $("#location").removeClass("active");
+  });
+
 //---Временная заглушка----//
-  marker.addListener('click', function() {
+  google.maps.event.addListener(marker, 'click', function() {
     $(".more-info_wrapper").addClass("show");
   });
 
@@ -127,3 +134,9 @@ function initMap() {
  //--Geobtn--//
 
 }
+
+$(document).ready(function(){
+  $(document).on("click", "#location", function(event){
+    $(this).addClass("active");
+  });
+});

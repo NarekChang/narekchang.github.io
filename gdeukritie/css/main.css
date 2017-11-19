@@ -254,13 +254,13 @@ a:hover{
 .more-info_wrapper,
 .modal_block{
   position: fixed;
-  left: 0;
   right: 0;
+  left: 0;
   top: 0;
   bottom: 0;
   margin: 0;
-  padding: 0;
   width: 100%;
+  max-width: 100%;
   height: 100%;
   z-index: 9999;
   text-align: center;
@@ -272,6 +272,10 @@ a:hover{
 
   opacity: 0;
   visibility: hidden;
+}
+.more-info_wrapper{
+  left: auto;
+  max-width: 380px;
 }
 .modal_block{
   -webkit-transition: .3s all;
@@ -299,7 +303,6 @@ a:hover{
   top: 50px;;
   right: 0;
   padding: 0 0 95px 0;
-  max-width: 460px;
   height: 100%;
   max-width: 380px;
   width: 100%;
@@ -495,6 +498,9 @@ a:hover{
   -moz-transition: .15s all;
   -o-transition: .15s all;
   transition: .15s all;
+}
+.cntrl_btn#location.active{
+  background-image: url("../files/img/geo_location.png")!important;
 }
 /*-----Style's-----*/
 .plot{
@@ -1345,5 +1351,12 @@ a:hover{
   .add-obj_form table tr td textarea,
   .add-obj_form table tr td input[type="text"]{
     max-width: 160px;
+  }
+}
+@media(max-width: 540px){
+  .more-info_wrapper,
+  .modal_block{
+    left: 0;
+    max-width:100%;
   }
 }
