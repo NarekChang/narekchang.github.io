@@ -1,7 +1,8 @@
-"apps":[{
+{"apps":[{
 "name": "ArtWalls",
 "link": {
   "android": "https://play.google.com/store/apps/details?id=com.artwallpapers"
 },
 "ico": "https://github.com/NarekChang/narekchang.github.io/raw/master/file/icon_60pt%403x.png"
 }]
+}
