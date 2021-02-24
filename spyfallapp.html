@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpyFall - board game for party</title>
+  </head>
+  <body>
+    <script>
+      function iOS() {
+        return (
+          [
+            "iPad Simulator",
+            "iPhone Simulator",
+            "iPod Simulator",
+            "iPad",
+            "iPhone",
+            "iPod",
+          ].includes(navigator.platform) ||
+          // iPad on iOS 13 detection
+          (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+        );
+      }
+
+        document.addEventListener('DOMContentLoaded', function(){
+            if(iOS()) {
+                window.location.replace("https://apps.apple.com/ru/app/id1552877334");
+            } else {
+                window.location.replace("https://play.google.com/store/apps/details?id=com.alien.shakerapps");
+            }
+        });
+    </script>
+  </body>
+</html>
